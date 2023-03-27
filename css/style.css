@@ -1,0 +1,55 @@
+:root {
+    --font-color: #1a1a1a;
+    --background-color: #F2E9D2;
+    --accent-color: #5DA9E9;
+    --secondary-background-color: #EFEFEF;
+    --complementary-accent-color: #F7B267;
+    --alt-complementary-accent-color: #7CC6C7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background: url(../assets/playa.jpg) center / cover;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+header ul li {
+    margin-top: 20px;
+    padding: 10px 5px;
+}
+
+header ul li * {
+    border-radius: 3pt;
+    text-decoration: none;
+    padding: 5px 25px;
+    background: none;
+    color: var(--font-color);
+    font-size: 1em;
+    border: 1px solid var(--font-color);
+    text-transform: uppercase;
+    transition: 0.5s ease;
+}
+
+header ul li *:hover {
+    cursor: pointer;
+    background-color: var(--font-color);
+    color: var(--background-color);
+}
