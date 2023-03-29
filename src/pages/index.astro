@@ -1,6 +1,7 @@
 ---
 import Core from "../layouts/Core.astro";
 import "../css/index.css";
+import SearchBar from "../components/searchBar.astro";
 ---
 
 <Core title="Home">
@@ -10,12 +11,7 @@ import "../css/index.css";
 				<div class="row justify-content-center">
 					<div class="col-lg-6 text-center">
 						<h2 data-aos="fade-down">What are you searching?</h2>
-						<div class="input-group mb-3">
-							<input id = "search-bar"type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" placeholder="Alcúdia">
-							<div class="input-group-prepend">
-								<button type="button" class="btn btn-warning"><i class="bi bi-search"></i></button>
-							</div>
-						</div>
+						<SearchBar/>
 					</div>
 				</div>
 			</div>
