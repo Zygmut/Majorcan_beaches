@@ -7,6 +7,9 @@
 	right: 0;
 }
 
+.header .logo {
+	text-decoration: none;
+}
 .header .logo img {
 	max-height: 40px;
 	margin-right: 6px;
@@ -15,7 +18,7 @@
 .header .logo h1 {
 	font-size: 24px;
 	font-weight: 700;
-	color: var(--font-color);
+	color: var(--complementary-font-color);
 	margin-bottom: 0;
 	font-family: var(--font-primary);
 }
@@ -52,7 +55,7 @@
 		font-family: var(--font-primary);
 		font-size: 14px;
 		font-weight: 500;
-		color: var(--font-color);
+		color: var(--complementary-font-color);
 		text-transform: uppercase;
 		white-space: nowrap;
 		transition: 0.3s;
@@ -73,7 +76,7 @@
 		width: 0px;
 		bottom: -6px;
 		left: 0;
-		background-color: var(--accent-color);
+		background-color: var(--complementary-accent-color);
 		visibility: hidden;
 		transition: all 0.3s ease-in-out 0s;
 	}
@@ -89,7 +92,7 @@
 	.navbar .active,
 	.navbar .active:focus,
 	.navbar li:hover>a {
-		color: var(--accent-color);
+		color: var(--complementary-accent-color);
 	}
 
 	.navbar .dropdown ul {
@@ -102,7 +105,7 @@
 		z-index: 99;
 		opacity: 0;
 		visibility: hidden;
-		background: var(--secondary-background-color);
+		background: var(--complementary-font-color);
 		box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
 		transition: 0.3s;
 	}
