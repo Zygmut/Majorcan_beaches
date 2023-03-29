@@ -22,6 +22,10 @@
 	margin-bottom: 0;
 	font-family: var(--font-primary);
 }
+.header .logo h1:hover{
+	color: var(--color-primary);
+	transition: 0.3s;
+}
 
 @media (min-width: 1280px) {
 	.navbar {
