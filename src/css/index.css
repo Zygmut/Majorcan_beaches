@@ -79,7 +79,10 @@
 	bottom: 0;
 	margin: auto;
 }
-
+#search-bar::placeholder{
+	color:var(--color-default);
+	opacity: 0.5;
+}
 @media (max-width: 768px) {
 	.hero .info h2 {
 		font-size: 36px;

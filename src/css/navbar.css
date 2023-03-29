@@ -16,11 +16,12 @@
 }
 
 .header .logo h1 {
-	font-size: 24px;
+	font-size: 32px;
 	font-weight: 700;
 	color: var(--complementary-font-color);
 	margin-bottom: 0;
-	font-family: var(--font-primary);
+	font-family: var(--font-primary), var(--font-secondary),var(--font-base);
+	transition: 0.3s;
 }
 .header .logo h1:hover{
 	color: var(--color-primary);
