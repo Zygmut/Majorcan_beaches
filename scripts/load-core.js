@@ -9,6 +9,16 @@ document.addEventListener("DOMContentLoaded", async () => {
 });
 
 async function loadCoreContent(templates) {
+	templates.getElementsByTagName("content")[0].childNodes.forEach((tag) => {
+		if (tag.nodeType === Node.ELEMENT_NODE) {
+			document.body.appendChild(tag);
+		}
+	});
+
+	window.addEventListener("load", () => {
+		document.querySelector("#preloader").remove();
+	});
+
 	Array.from(templates.getElementsByTagName("head")[0].childNodes)
 		.slice()
 		.reverse()

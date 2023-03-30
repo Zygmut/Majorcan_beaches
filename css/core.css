@@ -7,11 +7,8 @@
 	--complementary-accent-color: #f7b267;
 	--alt-complementary-accent-color: #7cc6c7;
 	--font-primary: "Lato";
-	--font-secundary:"Trebuchet MS";
-	--font-base:"sans-serif";
-	--color-default: #364d59;
-	--color-primary: #feb900;
-	--color-secondary: #52565e;
+	--font-secundary: "Trebuchet MS";
+	--font-base: "sans-serif";
 }
 
 * {
@@ -21,5 +18,37 @@
 }
 
 body {
-	background-color: var(blue);
+	background-color: var(--font-color);
+}
+
+#preloader {
+	position: fixed;
+	inset: 0;
+	z-index: 999999;
+	overflow: hidden;
+	background: var(--background-color);
+	transition: all 0.6s ease-out;
+}
+
+#preloader:before {
+	content: "";
+	position: fixed;
+	top: calc(50% - 30px);
+	left: calc(50% - 30px);
+	border: 6px solid var(--background-color);
+	border-color: var(--accent-color) transparent var(--complementary-accent-color) transparent;
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	animation: animate-preloader 1.5s linear infinite;
+}
+
+@keyframes animate-preloader {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
 }
