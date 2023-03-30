@@ -20,11 +20,10 @@
 	font-weight: 700;
 	color: var(--complementary-font-color);
 	margin-bottom: 0;
-	font-family: var(--font-primary), var(--font-secondary),var(--font-base);
 	transition: 0.3s;
 }
 .header .logo h1:hover{
-	color: var(--color-primary);
+	color: var(--complementary-accent-color);
 	transition: 0.3s;
 }
 
@@ -57,7 +56,6 @@
 		align-items: center;
 		justify-content: space-between;
 		padding: 0 3px;
-		font-family: var(--font-primary);
 		font-size: 14px;
 		font-weight: 500;
 		color: var(--complementary-font-color);
@@ -207,7 +205,6 @@
 		align-items: center;
 		justify-content: space-between;
 		padding: 10px 20px;
-		font-family: var(--font-primary);
 		font-size: 15px;
 		font-weight: 500;
 		color: rgba(255, 255, 255, 0.7);
