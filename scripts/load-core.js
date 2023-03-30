@@ -1,11 +1,14 @@
-window.onload = (async () => {
+document.addEventListener("DOMContentLoaded", async () => {
 	const templates = await fetch("../void.html")
 		.then((response) => response.text())
 		.then((html) => {
 			return new DOMParser().parseFromString(html, "text/html");
 		})
 		.catch((error) => console.error(error));
+	await loadCoreContent(templates);
+});
 
+async function loadCoreContent(templates) {
 	//const nav = templates.getElementById("nav-tmpl");
 	//const header = document.createElement("header");
 	//header.appendChild(nav.content);
@@ -22,12 +25,13 @@ window.onload = (async () => {
 
 	// Add body items
 	templates.getElementsByTagName("body")[0].childNodes.forEach((tag) => {
-		console.log(tag);
-		document.body.appendChild(tag);
+		if (tag.nodeType === Node.ELEMENT_NODE) {
+			document.body.appendChild(tag);
+		}
 	});
 
 	// Remove voided items
 	Array.from(document.getElementsByClassName("short-lived")).forEach((tag) =>
 		tag.remove()
 	);
-})();
+}
