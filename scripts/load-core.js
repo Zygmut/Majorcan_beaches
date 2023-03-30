@@ -19,6 +19,22 @@ async function loadCoreContent(templates) {
 		document.querySelector("#preloader").remove();
 	});
 
+	const scrollTop = document.querySelector(".scroll-top");
+	const togglescrollTop = function () {
+		window.scrollY > 0
+			? scrollTop.classList.add("active")
+			: scrollTop.classList.remove("active");
+	};
+	window.addEventListener("load", togglescrollTop);
+	document.addEventListener("scroll", togglescrollTop);
+	scrollTop.addEventListener(
+		"click",
+		window.scrollTo({
+			top: 0,
+			behavior: "smooth",
+		})
+	);
+
 	Array.from(templates.getElementsByTagName("head")[0].childNodes)
 		.slice()
 		.reverse()

@@ -14,11 +14,11 @@
 * {
 	margin: 0;
 	padding: 0;
-	font-family: var(--font-primary), sans-serif;
+	font-family: var(--font-primary), var(--font-secundary), var(--font-base);
 }
 
 body {
-	background-color: var(--font-color);
+	background-color: var(--background-color);
 }
 
 #preloader {
@@ -51,4 +51,34 @@ body {
 	100% {
 		transform: rotate(360deg);
 	}
+}
+
+.scroll-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 99999;
+  background: var(--accent-color);
+  color: var(--complementary-font-color);
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+
+.scroll-top i {
+  font-size: 24px;
+  color: var(--complementary-font-color);
+  line-height: 0;
+}
+
+.scroll-top:hover {
+  background: var(--complementary-accent-color);
+}
+
+.scroll-top.active {
+  visibility: visible;
+  opacity: 1;
 }
