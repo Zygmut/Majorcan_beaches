@@ -60,7 +60,7 @@ body {
   right: 15px;
   bottom: 15px;
   z-index: 99999;
-  background: var(--accent-color);
+  background: var(--complementary-accent-color);
   color: var(--complementary-font-color);
   width: 40px;
   height: 40px;
@@ -75,7 +75,7 @@ body {
 }
 
 .scroll-top:hover {
-  background: var(--complementary-accent-color);
+  background: var(--accent-color);
 }
 
 .scroll-top.active {
