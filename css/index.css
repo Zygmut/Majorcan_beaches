@@ -29,10 +29,6 @@
 	transition-duration: 1s;
 }
 
-.hero .carousel-item.active::before {
-	background-color: rgba(0, 0, 0, 0.25);
-}
-
 .hero .carousel-item img {
 	position: absolute;
 	left: 50%;
@@ -67,53 +63,8 @@
 	position: relative;
 }
 
-.hero .info h2:after {
-	content: "";
-	position: absolute;
-	display: block;
-	width: 80px;
-	height: 4px;
-	background: var(--complementary-accent-color);
-	left: 0;
-	right: 0;
-	bottom: 0;
-	margin: auto;
-}
-#search-bar::placeholder{
-	color:var(--color-default);
-	opacity: 0.5;
-}
 @media (max-width: 768px) {
 	.hero .info h2 {
 		font-size: 36px;
-	}
-}
-
-.hero .info p {
-	color: var(--complementary-font-color);
-	font-size: 18px;
-}
-
-.hero .info .btn-get-started:hover {
-	background: var(--accent-color);
-}
-
-.hero .carousel-control-prev {
-	justify-content: start;
-}
-
-@media (min-width: 640px) {
-	.hero .carousel-control-prev {
-		padding-left: 15px;
-	}
-}
-
-.hero .carousel-control-next {
-	justify-content: end;
-}
-
-@media (min-width: 640px) {
-	.hero .carousel-control-next {
-		padding-right: 15px;
 	}
 }

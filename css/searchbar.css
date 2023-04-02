@@ -1,4 +1,13 @@
-.form-control:focus{
-	box-shadow: 0px 0px 0.5px 0.5px var(--color-primary);
-	border-color: var(--color-primary);
-}
+ .search-bar {
+ 	transition: box-shadow 0.2s ease-in-out;
+ }
+
+ .search-bar:focus-within {
+ 	box-shadow: 0 0 1rem 0 var(--accent-color);
+ }
+
+ .form-control:focus,
+ .btn:focus,
+ .custom-select:focus {
+ 	box-shadow: none;
+ }
