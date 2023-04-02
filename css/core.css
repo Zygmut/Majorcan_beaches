@@ -1,0 +1,84 @@
+:root {
+	--font-color: #1a1a1a;
+	--complementary-font-color: #e5e5e5;
+	--background-color: #f2e9d2;
+	--accent-color: #5da9e9;
+	--secondary-background-color: #efefef;
+	--complementary-accent-color: #f7b267;
+	--alt-complementary-accent-color: #7cc6c7;
+	--font-primary: "Lato";
+	--font-secundary: "Trebuchet MS";
+	--font-base: "sans-serif";
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: var(--font-primary), var(--font-secundary), var(--font-base);
+}
+
+body {
+	background-color: var(--background-color);
+}
+
+#preloader {
+	position: fixed;
+	inset: 0;
+	z-index: 999999;
+	overflow: hidden;
+	background: var(--background-color);
+	transition: all 0.6s ease-out;
+}
+
+#preloader:before {
+	content: "";
+	position: fixed;
+	top: calc(50% - 30px);
+	left: calc(50% - 30px);
+	border: 6px solid var(--background-color);
+	border-color: var(--accent-color) transparent var(--complementary-accent-color) transparent;
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	animation: animate-preloader 1.5s linear infinite;
+}
+
+@keyframes animate-preloader {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.scroll-top {
+	position: fixed;
+	visibility: hidden;
+	opacity: 0;
+	right: 15px;
+	bottom: 15px;
+	z-index: 99999;
+	background: var(--complementary-accent-color);
+	color: var(--complementary-font-color);
+	width: 40px;
+	height: 40px;
+	border-radius: 4px;
+	transition: all 0.4s;
+}
+
+.scroll-top i {
+	font-size: 24px;
+	color: var(--complementary-font-color);
+	line-height: 0;
+}
+
+.scroll-top:hover {
+	background: var(--accent-color);
+}
+
+.scroll-top.active {
+	visibility: visible;
+	opacity: 1;
+}
