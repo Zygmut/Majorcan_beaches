@@ -10,6 +10,7 @@ header {
 header .logo {
 	text-decoration: none;
 }
+
 header .logo img {
 	max-height: 40px;
 	margin-right: 6px;
@@ -22,7 +23,8 @@ header .logo h1 {
 	margin-bottom: 0;
 	transition: 0.3s;
 }
-header .logo h1:hover{
+
+header .logo h1:hover {
 	color: var(--complementary-accent-color);
 	transition: 0.3s;
 }
