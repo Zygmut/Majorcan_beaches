@@ -14,7 +14,11 @@
 	<link rel="stylesheet" href="css/core.css">
 	<link rel="stylesheet" href="css/navbar-core.css">
 	<link rel="stylesheet" href="css/navbar-alt.css">
+	<link rel="stylesheet" href="css/searchbar.css">
+	<link rel="stylesheet" href="css/search.css">
+
 	<title>Search</title>
+
 </head>
 
 <body>
@@ -36,6 +40,265 @@
 	</header>
 
 	<!-- NEW CONTENT HERE -->
+	<div class="container mt-4 col-9">
+		<form>
+			<div class="form-group">
+				<h2>Search Beaches</h2>
+				<div class="row">
+					<div class="col-md-12 mb-2">
+						<div class="form-group">
+							<label class="pb-2" for="Type">Keyword</label>
+							<input type="text" class="form-control form-control-lg form-control-a" placeholder="Keyword">
+						</div>
+					</div>
+					<div class="col-md-6 mb-2">
+						<div class="form-group mt-3">
+							<label class="pb-2" for="Type">Type</label>
+							<select class="form-control form-select form-control-a" id="Type">
+								<option>Sandy</option>
+								<option>Rocky</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6 mb-2">
+						<div class="form-group mt-3">
+							<label class="pb-2" for="city">City</label>
+							<select class="form-control form-select form-control-a" id="city">
+								<option>All City</option>
+								<option>Palma</option>
+								<option>Muro</option>
+								<option>Alcudio</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="d-flex flex-wrap justify-content-evenly">
+					<div class="form-check">
+						<input class="form-check-input visually-hidden" type="checkbox" id="servicio-socorro"
+							name="servicio-socorro">
+						<label class="form-check-label emoji-label" for="servicio-socorro" data-bs-toggle="tooltip"
+							data-bs-placement="top" title="SERVICIO DE SOCORRO">🆘</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input visually-hidden" type="checkbox" id="aparcamiento" name="aparcamiento">
+						<label class="form-check-label emoji-label" for="aparcamiento" data-bs-toggle="tooltip"
+							data-bs-placement="top" title="APARCAMIENTO">🅿️</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input visually-hidden" type="checkbox" id="duchas" name="duchas">
+						<label class="form-check-label emoji-label" for="duchas" data-bs-toggle="tooltip" data-bs-placement="top"
+							title="DUCHAS">🚿</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input visually-hidden" type="checkbox" id="bandera-azul" name="bandera-azul">
+						<label class="form-check-label emoji-label" for="bandera-azul" data-bs-toggle="tooltip"
+							data-bs-placement="top" title="BANDERA AZUL">🏖️</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input visually-hidden" type="checkbox" id="nudista" name="nudista">
+						<label class="form-check-label emoji-label" for="nudista" data-bs-toggle="tooltip" data-bs-placement="top"
+							title="NUDISTA">🔞</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input visually-hidden" type="checkbox" id="caminata" name="caminata">
+						<label class="form-check-label emoji-label" for="caminata" data-bs-toggle="tooltip" data-bs-placement="top"
+							title="CAMINATA">🚶‍♂️</label>
+					</div>
+				</div>
+			</div>
+
+			<button type="submit" class="btn btn-primary mt-3 ">Submit</button>
+		</form>
+
+		<section class="row d-flex justify-content-center align-items-center mt-5">
+			<div class="col col-md-4 gap-3 py-3">
+				<div class="card rounded-3 card-box">
+					<a href="beach.html">
+						<div class="img-overlay">
+							<img src="assets/index-carousel/car1.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="card-overlay">
+							<div class="card-overlay-content">
+								<div class="card-header">
+									<h3 class="card-title">
+										Platja de Alcudia
+									</h3>
+								</div>
+								<div class="card-footer-a">
+									<ul class="card-info d-flex justify-content-around">
+										<li>
+											<label data-bs-toggle="tooltip" data-bs-placement="top" title="CAMINATA">🚶‍♂️</label>
+										</li>
+										<li>
+											<label data-bs-toggle="tooltip" data-bs-placement="top" title="DUCHAS">🚿‍</label>
+										</li>
+										<li>
+											<label data-bs-toggle="tooltip" data-bs-placement="top" title="NUDISTA">🔞</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col col-md-4 gap-3 py-3">
+				<div class="card rounded-3 card-box">
+					<a href="beach.html">
+						<div class="img-overlay">
+							<img src="assets/index-carousel/car1.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="card-overlay">
+							<div class="card-overlay-content">
+								<div class="card-header">
+									<h3 class="card-title">
+										Platja de Alcudia
+									</h3>
+								</div>
+								<div class="card-footer-a">
+									<ul class="card-info d-flex justify-content-around">
+										<li>
+											<label data-bs-toggle="tooltip" data-bs-placement="top" title="CAMINATA">🚶‍♂️</label>
+										</li>
+										<li>
+											<label data-bs-toggle="tooltip" data-bs-placement="top" title="DUCHAS">🚿‍</label>
+										</li>
+										<li>
+											<label data-bs-toggle="tooltip" data-bs-placement="top" title="NUDISTA">🔞</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col col-md-4 gap-3 py-3">
+				<div class="card rounded-3 card-box">
+					<a href="beach.html">
+						<div class="img-overlay">
+							<img src="assets/index-carousel/car1.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="card-overlay">
+							<div class="card-overlay-content">
+								<div class="card-header">
+									<h3 class="card-title">
+										Platja de Alcudia
+									</h3>
+								</div>
+								<div class="card-footer-a">
+									<ul class="card-info d-flex justify-content-around">
+										<li>
+											<label data-bs-toggle="tooltip" data-bs-placement="top" title="CAMINATA">🚶‍♂️</label>
+										</li>
+										<li>
+											<label data-bs-toggle="tooltip" data-bs-placement="top" title="DUCHAS">🚿‍</label>
+										</li>
+										<li>
+											<label data-bs-toggle="tooltip" data-bs-placement="top" title="NUDISTA">🔞</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col col-md-4 gap-3 py-3">
+				<div class="card rounded-3 card-box">
+					<a href="beach.html">
+						<div class="img-overlay">
+							<img src="assets/index-carousel/car1.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="card-overlay">
+							<div class="card-overlay-content">
+								<div class="card-header">
+									<h3 class="card-title">
+										Platja de Alcudia
+									</h3>
+								</div>
+								<div class="card-footer-a">
+									<ul class="card-info d-flex justify-content-around">
+										<li>
+											<label data-bs-toggle="tooltip" data-bs-placement="top" title="CAMINATA">🚶‍♂️</label>
+										</li>
+										<li>
+											<label data-bs-toggle="tooltip" data-bs-placement="top" title="DUCHAS">🚿‍</label>
+										</li>
+										<li>
+											<label data-bs-toggle="tooltip" data-bs-placement="top" title="NUDISTA">🔞</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col col-md-4 gap-3 py-3">
+				<div class="card rounded-3 card-box">
+					<a href="beach.html">
+						<div class="img-overlay">
+							<img src="assets/index-carousel/car1.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="card-overlay">
+							<div class="card-overlay-content">
+								<div class="card-header">
+									<h3 class="card-title">
+										Platja de Alcudia
+									</h3>
+								</div>
+								<div class="card-footer-a">
+									<ul class="card-info d-flex justify-content-around">
+										<li>
+											<label data-bs-toggle="tooltip" data-bs-placement="top" title="CAMINATA">🚶‍♂️</label>
+										</li>
+										<li>
+											<label data-bs-toggle="tooltip" data-bs-placement="top" title="DUCHAS">🚿‍</label>
+										</li>
+										<li>
+											<label data-bs-toggle="tooltip" data-bs-placement="top" title="NUDISTA">🔞</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col col-md-4 gap-3 py-3">
+				<div class="card rounded-3 card-box">
+					<a href="beach.html">
+						<div class="img-overlay">
+							<img src="assets/index-carousel/car1.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="card-overlay">
+							<div class="card-overlay-content">
+								<div class="card-header">
+									<h3 class="card-title">
+										Platja de Alcudia
+									</h3>
+								</div>
+								<div class="card-footer-a">
+									<ul class="card-info d-flex justify-content-around">
+										<li>
+											<label data-bs-toggle="tooltip" data-bs-placement="top" title="CAMINATA">🚶‍♂️</label>
+										</li>
+										<li>
+											<label data-bs-toggle="tooltip" data-bs-placement="top" title="DUCHAS">🚿‍</label>
+										</li>
+										<li>
+											<label data-bs-toggle="tooltip" data-bs-placement="top" title="NUDISTA">🔞</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</section>
+	</div>
 
 	<a href="#" class="scroll-top d-flex align-items-center justify-content-center">
 		<i class="bi bi-arrow-up-short"></i>
