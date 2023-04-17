@@ -1,6 +1,10 @@
-document.addEventListener("DOMContentLoaded", () => {
+import { fetchDB } from "./db.js";
+
+document.addEventListener("DOMContentLoaded", async () => {
 	loadURLContent();
 	setSubmitListener();
+	const JSON = await fetchDB();
+	console.log(JSON);
 });
 
 function loadURLContent() {
