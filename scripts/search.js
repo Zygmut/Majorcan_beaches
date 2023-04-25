@@ -13,85 +13,78 @@ function loadURLContent() {
 	document.getElementById("name").value = content;
 }
 
-function check_beach_subtype_selection(data) {
-	return (
-		data["first_aid"] ||
-		data["parking"] ||
-		data["showers"] ||
-		data["blue_flag"] ||
-		data["nudist"] ||
-		data["hike"]
-	);
-}
-
 function focusSubmitButton() {
 	document.getElementById("submit").focus;
 }
 
+function getFormData(documentDOM) {
+	return {
+		name: documentDOM.getElementById("name").value,
+		type: documentDOM.getElementById("type").value,
+		city: documentDOM.getElementById("city").value,
+		first_aid: documentDOM.getElementById("first_aid").checked,
+		parking: documentDOM.getElementById("parking").checked,
+		showers: documentDOM.getElementById("showers").checked,
+		blue_flag: documentDOM.getElementById("blue_flag").checked,
+		nudist: documentDOM.getElementById("nudist").checked,
+		hike: documentDOM.getElementById("hike").checked,
+	};
+}
+
+function generateKeywordFilter(data, keyword_map) {
+	const keyword_filter = [];
+	Object.keys(data).forEach((key) => {
+		if (data[key]) {
+			const keyword = keyword_map[key];
+			if (keyword) {
+				keyword_filter.push(keyword);
+			}
+		}
+	});
+
+	if (data.type !== "All types") {
+		keyword_filter.push(keyword_map[data.type.toLowerCase()]);
+	}
+	return keyword_filter;
+}
+
 function setSubmitListener() {
 	document.getElementById("submit").onclick = async () => {
-		const data = {
-			name: document.getElementById("name").value,
-			type: document.getElementById("type").value,
-			city: document.getElementById("city").value,
-			first_aid: document.getElementById("first_aid").checked,
-			parking: document.getElementById("parking").checked,
-			showers: document.getElementById("showers").checked,
-			blue_flag: document.getElementById("blue_flag").checked,
-			nudist: document.getElementById("nudist").checked,
-			hike: document.getElementById("hike").checked,
-		};
+		const form_data = getFormData(document);
 
-		console.log(data);
+		// filter values depending on input
+		const keyword_filter = generateKeywordFilter(form_data, {
+			first_aid: "servicio_de_socorro",
+			parking: "aparcamiento",
+			showers: "duchas",
+			blue_flag: "bandera_azul",
+			nudist: "nudista",
+			hike: "caminata",
+			sandy: "arena",
+			rocky: "roca",
+		});
+
+		const filter_name = (item, data) =>
+			item.name.toLowerCase().indexOf(data.name.toLowerCase()) >= 0;
+
+		const filter_keywords = (item, keywords) =>
+			keyword_filter.length == 0 ||
+			keywords.every((keyword) => item["keywords"].includes(keyword));
+
+		const filter_city = (item, city) =>
+			item.geo.address.addressLocality === city;
 
 		const db = await fetchDB();
-		console.log(db);
-		let search = db;
-		if (check_beach_subtype_selection(data)) {
-			if (data["first_aid"]) {
-				search = search.filter(
-					(element) =>
-						element["keywords"].includes("servicio_de_socorro")
-				);
-			}
-			if (search.length != 0 && data["parking"]) {
-				search = search.filter(
-					(element) =>
-						element["keywords"].includes("aparcamiento")
-				);
-			}
-			if (search.length != 0 && data["showers"]) {
-				search = search.filter(
-					(element) =>
-						element["keywords"].includes("duchas")
-				);
-			}
-			if (search.length != 0 && data["blue_flag"]) {
-				search = search.filter(
-					(element) =>
-						element["keywords"].includes("bandera_azul")
-				);
-			}
-			if (search.length != 0 && data["nudist"]) {
-				search = search.filter(
-					(element) =>
-						element["keywords"].includes("nudista")
-				);
-			}
-			if (search.length != 0 && data["hike"]) {
-				search = search.filter(
-					(element) =>
-						element["keywords"].includes("caminata")
-				);
-			}
-		}
 
-		if (search.length != 0 && data["name"] != "") {
-			search = search.filter(
-				(element) =>
-					element["name"].toLowerCase().indexOf(data["name"].toLowerCase()) >= 0
-			);
-		}
+		let search = db.filter((item) =>
+			form_data.city === "All Cities" ? true : filter_city(item, form_data.city)
+		);
+
+		search = search.filter(
+			(item) =>
+				filter_name(item, form_data) && filter_keywords(item, keyword_filter)
+		);
+
 		console.log(search);
 	};
 }
