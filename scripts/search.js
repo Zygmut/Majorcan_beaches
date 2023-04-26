@@ -76,11 +76,11 @@ function setSubmitListener() {
 
 		const db = await fetchDB();
 
-		let search = db.filter((item) =>
-			form_data.city === "All Cities" ? true : filter_city(item, form_data.city)
-		);
-
-		search = search.filter(
+		const search = (
+			form_data.city === "All Cities"
+				? db
+				: db.filter((item) => filter_city(item, form_data.city))
+		).filter(
 			(item) =>
 				filter_name(item, form_data) && filter_keywords(item, keyword_filter)
 		);
