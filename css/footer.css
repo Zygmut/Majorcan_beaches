@@ -1,0 +1,15 @@
+footer h4 {
+	padding-bottom: 1.8rem;
+	margin-bottom: 1rem;
+	position: relative;
+}
+
+footer h4:after {
+	content: "";
+	position: absolute;
+	width: 70px;
+	height: 4px;
+	background-color: var(--complementary-accent-color);
+	bottom: 20px;
+	left: 0;
+}
