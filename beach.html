@@ -52,48 +52,74 @@
 			</article>
 			<hr>
 			<div class="card-body p-0">
-				<div class="row justify-content-between">
+				<div class="row ">
 
 					<!-- Left side -->
-					<div class="col-xl-5">
-						<div class="row">
-							<ul class="nav nav-pills-a nav-pills mb-3 section-t3" id="pills-tab" role="tablist">
-								<li class="nav-item">
-									<a class="nav-link active" id="pills-video-tab" data-bs-toggle="pill" href="#pills-video" role="tab"
-										aria-controls="pills-video" aria-selected="true">Video</a>
+					<div class="col-xl-5 ">
+						<div class="row ">
+							<ul class="d-flex justify-content-between nav nav-pills-a nav-pills mb-2 p-0" id="pills-tab"
+								role="tablist">
+								<li>
+									<a class="nav-link active pt-0 pb-0 mt-0" id="pills-image-tab" data-bs-toggle="pill"
+										href="#carouselExampleControls" role="tab" aria-controls="carouselExampleControls"
+										aria-selected="true">Images</a>
 								</li>
-								<li class="nav-item">
-									<a class="nav-link" id="pills-map-tab" data-bs-toggle="pill" href="#pills-map" role="tab"
-										aria-controls="pills-map" aria-selected="false">Ubication</a>
+								<li>
+									<a class="nav-link pt-0 pb-0 mt-0" id="pills-video-tab" data-bs-toggle="pill" href="#pills-video"
+										role="tab" aria-controls="pills-video" aria-selected="false">Video</a>
+								</li>
+								<li>
+									<a class="nav-link pt-0 pb-0 mt-0" id="pills-map-tab" data-bs-toggle="pill" href="#pills-map"
+										role="tab" aria-controls="pills-map" aria-selected="false">Ubication</a>
 								</li>
 							</ul>
-							<!-- Carousel -->
-							<article id="carouselExampleControls" class="carousel slide mb-4" data-ride="carousel">
-								<div class="carousel-inner">
-									<div class="carousel-item">
-										<img class="d-block w-100" src="assets/index-carousel/car2.jpg" alt="First slide">
-									</div>
-									<div class="carousel-item active">
-										<img class="d-block w-100" src="assets/index-carousel/car3.jpg" alt="Second slide">
-									</div>
-									<div class="carousel-item">
-										<img class="d-block w-100" src="assets/index-carousel/car1.jpg" alt="Third slide">
-									</div>
 
+							<div class="tab-content mb-3" id="pills-tabContent">
+								<!-- Carousel -->
+								<article id="carouselExampleControls" class="carousel slide tab-pane fade show active" role="tabpanel"
+									data-ride="carousel">
+									<div class="carousel-inner">
+										<div class="carousel-item">
+											<img class="d-block w-100" src="assets/index-carousel/car2.jpg" alt="First slide">
+										</div>
+										<div class="carousel-item active">
+											<img class="d-block w-100" src="assets/index-carousel/car3.jpg" alt="Second slide">
+										</div>
+										<div class="carousel-item">
+											<img class="d-block w-100" src="assets/index-carousel/car1.jpg" alt="Third slide">
+										</div>
+
+									</div>
+									<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+										data-bs-slide="prev">
+										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										<span class="visually-hidden">Previous</span>
+									</button>
+
+									<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+										data-bs-slide="next">
+										<span class="carousel-control-next-icon" aria-hidden="true"></span>
+										<span class="visually-hidden">Next</span>
+									</button>
+								</article>
+
+								<!-- Video -->
+								<div class="tab-pane fade show ratio ratio-1x1" id="pills-video" role="tabpanel"
+									aria-labelledby="pills-video-tab">
+									<iframe class="d-block w-100 br-15" src="https://www.youtube.com/embed/l0LYsjTxm_w"
+										title="Video of the beach" webkitallowfullscreen mozallowfullscreen allowfullscreen allow></iframe>
 								</div>
-								<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-									data-bs-slide="prev">
-									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-									<span class="visually-hidden">Previous</span>
-								</button>
 
-								<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-									data-bs-slide="next">
-									<span class="carousel-control-next-icon" aria-hidden="true"></span>
-									<span class="visually-hidden">Next</span>
-								</button>
-							</article>
+								<!-- Location -->
+								<div class="tab-pane fade show ratio ratio-1x1" id="pills-map" role="tabpanel"
+									aria-labelledby="pills-map-tab">
+									<iframe class="d-block w-100 br-15"
+										src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12259.53035428495!2d3.1189606999999997!3d39.8096254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2ses!4v1680457588991!5m2!1sen!2ses"
+										title="Google Maps Location" allowfullscreenx></iframe>
+								</div>
 
+
+							</div>
 						</div>
 					</div>
 
@@ -114,11 +140,14 @@
 								</div>
 
 								<p class="description">
-									Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec
+									Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+									Curae; Donec
 									velit
 									neque, auctor sit amet
-									aliquam vel, ullamcorper sit amet ligula. Cras ultricies ligula sed magna dictum porta.
-									Curabitur aliquet quam id dui posuere blandit. Mauris blandit aliquet elit, eget tincidunt
+									aliquam vel, ullamcorper sit amet ligula. Cras ultricies ligula sed magna dictum
+									porta.
+									Curabitur aliquet quam id dui posuere blandit. Mauris blandit aliquet elit, eget
+									tincidunt
 									nibh pulvinar quam id dui posuere blandit.
 								</p>
 							</article>
@@ -143,29 +172,6 @@
 
 		<!-- Multiple tab -->
 		<section>
-			<div class="col-md-10 offset-md-1">
-				<ul class="nav nav-pills-a nav-pills mb-3 section-t3" id="pills-tab" role="tablist">
-					<li class="nav-item">
-						<a class="nav-link active" id="pills-video-tab" data-bs-toggle="pill" href="#pills-video" role="tab"
-							aria-controls="pills-video" aria-selected="true">Video</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" id="pills-map-tab" data-bs-toggle="pill" href="#pills-map" role="tab"
-							aria-controls="pills-map" aria-selected="false">Ubication</a>
-					</li>
-				</ul>
-				<div class="tab-content" id="pills-tabContent">
-					<div class="tab-pane fade show active" id="pills-video" role="tabpanel" aria-labelledby="pills-video-tab">
-						<iframe src="https://player.vimeo.com/video/451988693?h=cf6fc77f52" width="100%" height="460"
-							frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-					</div>
-					<div class="tab-pane fade" id="pills-map" role="tabpanel" aria-labelledby="pills-map-tab">
-						<iframe
-							src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12259.53035428495!2d3.1189606999999997!3d39.8096254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2ses!4v1680457588991!5m2!1sen!2ses"
-							width="100%" height="460" frameborder="0" style="border:0" allowfullscreen></iframe>
-					</div>
-				</div>
-			</div>
 
 			<!-- Comment section -->
 			<div class="row section-t3">
@@ -187,10 +193,12 @@
 									<h4 class="comment-author">Emma Stone</h4>
 									<span>18 Sep 2017</span>
 									<p class="comment-description">
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores reprehenderit, provident
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores reprehenderit,
+										provident
 										cumque
 										ipsam temporibus maiores
-										quae natus libero optio, at qui beatae ducimus placeat debitis voluptates amet corporis.
+										quae natus libero optio, at qui beatae ducimus placeat debitis voluptates amet
+										corporis.
 									</p>
 									<a href="3">Reply</a>
 								</div>
@@ -203,7 +211,8 @@
 									<h4 class="comment-author">Oliver Colmenares</h4>
 									<span>18 Sep 2017</span>
 									<p class="comment-description">
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores reprehenderit, provident
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores reprehenderit,
+										provident
 										cumque
 										ipsam temporibus maiores
 										quae.
@@ -219,7 +228,8 @@
 									<h4 class="comment-author">Emma Stone</h4>
 									<span>18 Sep 2017</span>
 									<p class="comment-description">
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores reprehenderit, provident
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores reprehenderit,
+										provident
 										cumque
 										ipsam temporibus maiores
 										quae natus libero optio.
@@ -275,12 +285,14 @@
 			<div class="row">
 				<div class="col">
 					<h4 class="text-dark mb-3">About Us</h4>
-					<p class="text-secondary">We provide information about beaches in the area to help you plan your next
+					<p class="text-secondary">We provide information about beaches in the area to help you plan your
+						next
 						vacation.</p>
 				</div>
 				<div class="col">
 					<h4 class="text-dark mb-3">Beach Directory</h4>
-					<p class="text-secondary">Find the perfect beach for your next adventure. Browse our directory of beaches or
+					<p class="text-secondary">Find the perfect beach for your next adventure. Browse our directory of
+						beaches or
 						use our search bar to find the perfect spot.</p>
 				</div>
 				<div class="col">

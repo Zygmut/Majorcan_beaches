@@ -16,14 +16,16 @@
 .description {
 	text-align: justify;
 }
-/*------/ Carousel /------*/
-.carouselExampleIndicators {
-	padding-top: 50px;
-	padding-right: 30px;
-	padding-bottom: 50px;
-	padding-left: 80px;
-	border-radius: 25px;
+
+.br-15{
+	border-radius: 15px;
 }
+
+.fit{
+	object-fit: fill;
+}
+
+/*------/ Carousel /------*/
 
 .carousel-inner {
 	border-radius: 15px;
@@ -31,20 +33,8 @@
 }
 
 .carousel-item img {
-	height: 350px;
+	aspect-ratio: 1/1;
 	object-fit: cover;
-}
-
-.text-brand {
-	color: #000000;
-	font-size: 2rem;
-	font-weight: 600;
-}
-
-@media (max-width: 767px) {
-	.text-brand {
-		font-size: 1.8rem;
-	}
 }
 
 /*------/ Nav Pills  /------*/
@@ -53,9 +43,9 @@
 }
 
 .nav-pills-a.nav-pills .nav-link {
-	color: #000000;
+	color: black;
 	position: relative;
-	font-weight: 600;
+	font-size: 1.5rem;
 }
 
 .nav-pills-a.nav-pills .nav-link.active {
@@ -65,9 +55,9 @@
 .nav-pills-a.nav-pills .nav-link.active:after {
 	content: "";
 	position: absolute;
-	left: 0;
+	left: 15%;
 	bottom: -1px;
-	width: 100%;
+	width: 70%;
 	height: 2px;
 	background-color: var(--alt-complementary-accent-color);
 
