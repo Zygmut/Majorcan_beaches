@@ -9,7 +9,7 @@ h2:after {
 	position: absolute;
 	width: 70px;
 	height: 4px;
-	background-color: var(--complementary-accent-color);
+	background-color: var(--accent-color);
 	bottom: 20px;
 	left: 0;
 }
@@ -66,21 +66,25 @@ h2:after {
 
 .card-box {
 	padding: 0;
-	border-radius: 10px;
+	border-color:var(--accent-color);
+	border: 20 0 0px;
+	border-radius: 15px;
+
 	position: relative;
 	overflow: hidden;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
+
 }
 
 img {
 	aspect-ratio: 1;
 }
 .img-overlay {
-	filter: brightness(0.85);
+	filter: brightness(0.7);
 }
 .img-overlay:hover{
-	filter: brightness(0.6);
+	filter: brightness(0.85);
 	transition: 0.2s ;
 }
 
@@ -91,9 +95,10 @@ img {
 @media (min-width: 768px) {
 
 	.card-box:hover img {
-		transform: scale(1.2);
+		transform: scale(1.1);
 	}
 }
+
 
 .card-overlay {
 	position: absolute;
@@ -175,13 +180,13 @@ img {
 
 @media (min-width: 768px) {
 	.card-header .card-title {
-		font-size: 1.3rem;
+		font-size: 1.2rem;
 	}
 }
 
 @media (min-width: 992px) {
 	.card-header .card-title {
-		font-size: 2rem;
+		font-size: 1.8rem;
 	}
 }
 
@@ -202,9 +207,9 @@ img {
 	padding: 0.8rem ;
 
 }
-
+/* This could be deprecated? No card info item found in search ~P*/
 .card-info .card-info-item {
-	font-size: 1rem;
+	font-size: 3rem;
 	color: var(--secondary-background-color);
 }
 
