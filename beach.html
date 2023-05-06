@@ -5,11 +5,12 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width" />
 	<link rel="icon" type="image/svg+xml" href="favicon.svg" />
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome@1.1.8/styles.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox@3.2.0/dist/css/glightbox.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
 
 	<link rel="stylesheet" href="css/core.css">
 	<link rel="stylesheet" href="css/navbar-core.css">
@@ -140,7 +141,7 @@
 								<div class="col d-flex justify-content-between">
 									<h3 class="title-d">Description</h3>
 
-									<button class="escuchar-audio "><i class="bi bi-volume-up"></i></button>
+									<button class="escuchar-audio "><i class="bi bi-volume-up-fill"></i></button>
 								</div>
 
 								<p class="description">
@@ -150,13 +151,14 @@
 								</p>
 							</article>
 
-							<section class="testimonials section-bg">
-
+							<!-- Comments -->
+							<section id="comment-section">
+								<h3 class="title-d">Comments</h3>
 								<div class="swiper">
 									<div class="swiper-wrapper">
 										<div class="swiper-slide">
-											<h3>Saul Goodman</h3>
-											<h4>Ceo &amp; Founder</h4>
+											<h4>Saul Goodman</h4>
+											<h5>Ceo &amp; Founder</h5>
 											<div class="stars">
 												<i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
 													class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -171,8 +173,8 @@
 										</div>
 
 										<div class="swiper-slide ">
-											<h3>John Larson</h3>
-											<h4>Entrepreneur</h4>
+											<h4>John Larson</h4>
+											<h5>Entrepreneur</h5>
 											<div class="stars">
 												<i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
 													class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -189,7 +191,12 @@
 									</div>
 									<div class="swiper-pagination"></div>
 								</div>
-
+								<form class="row m-0 ">
+									<div class="col-11 ps-0">
+										<input type="text" class="form-control" placeholder="Add your comment">
+									</div>
+									<button type="submit" class="col-1 btn btn-primary"><i class="bi bi-send-fill"></i></button>
+								</form>
 							</section>
 						</div>
 					</div>
