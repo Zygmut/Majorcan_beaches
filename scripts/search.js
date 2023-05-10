@@ -2,6 +2,7 @@ import { fetchDB } from "./db.js";
 
 document.addEventListener("DOMContentLoaded", async () => {
 	loadURLContent();
+	await setCurrentLocations();
 	setSubmitListener();
 	focusSubmitButton();
 });
@@ -46,6 +47,17 @@ function generateKeywordFilter(data, keyword_map) {
 		keyword_filter.push(keyword_map[data.type.toLowerCase()]);
 	}
 	return keyword_filter;
+}
+
+async function setCurrentLocations(){
+	const option = element => "<option>" + element + "</option>";
+	const db = await fetchDB();
+	let cities = new Set();
+	cities.add("All Cities");
+	db.forEach(x => cities.add(x.geo.address.addressLocality))
+	console.log(cities);
+	const options = Array.from(cities).map(x => option(x));
+	document.getElementById("city").innerHTML = options;
 }
 
 function setSubmitListener() {
