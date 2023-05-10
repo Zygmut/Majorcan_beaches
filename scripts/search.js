@@ -68,7 +68,6 @@ function generateKeywordFilter(data, keyword_map) {
 async function queryForm() {
 		const form_data = getFormData(document);
 
-		// filter values depending on input
 		const keyword_filter = generateKeywordFilter(form_data, {
 			first_aid: "servicio_de_socorro",
 			parking: "aparcamiento",
@@ -80,25 +79,20 @@ async function queryForm() {
 			rocky: "roca",
 		});
 
-		const filter_name = (item, data) =>
-			item.name.toLowerCase().indexOf(data.name.toLowerCase()) >= 0;
+		const filter_name = (item, name) =>
+			item.name.toLowerCase().indexOf(name.toLowerCase()) >= 0;
 
 		const filter_keywords = (item, keywords) =>
 			keyword_filter.length == 0 ||
 			keywords.every((keyword) => item["keywords"].includes(keyword));
 
 		const filter_city = (item, city) =>
-			item.geo.address.addressLocality === city;
+			city === "All Cities" || item.geo.address.addressLocality === city;
 
 		const db = await fetchDB();
 
-		const search = (
-			form_data.city === "All Cities"
-				? db
-				: db.filter((item) => filter_city(item, form_data.city))
-		).filter(
-			(item) =>
-				filter_name(item, form_data) && filter_keywords(item, keyword_filter)
+		const search = db.filter((item) =>
+				filter_city(item, form_data.city) && filter_name(item, form_data.name) && filter_keywords(item, keyword_filter)
 		);
 
 		console.log(search);
