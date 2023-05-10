@@ -1,4 +1,10 @@
-document.addEventListener("DOMContentLoaded", () => {
+import { fetchDB } from "./db.js";
+
+let db;
+
+document.addEventListener("DOMContentLoaded", async () => {
+	db = await fetchDB();
+	console.log(db);
 	enableContentSwipper();
 });
 
