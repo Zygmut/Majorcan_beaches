@@ -155,7 +155,7 @@ function generateBeach(id, name, tags, img_url) {
 											</h6>
 										</div>
 										<div id="tags" class="card-footer-a rounded-1">
-											<ul class="card-info d-flex justify-content-between">`;
+											<ul class="card-info d-flex justify-content-evenly">`;
 	tags
 		.filter((x) => x != "arena" && x != "roca")
 		.forEach((x) => (str += generateTag(x)));
@@ -165,7 +165,7 @@ function generateBeach(id, name, tags, img_url) {
 									</div>
 								</div>
 								<div class="img-overlay">
-									<img id="img" src="${img_url}" alt="" class="img-fluid">
+									<img id="img" src="${img_url}" class="img-fluid">
 								</div>
 							</a>
 						</div>

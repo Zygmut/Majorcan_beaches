@@ -35,6 +35,7 @@
 .carousel-item img {
 	aspect-ratio: 1/1;
 	object-fit: cover;
+	object-position: 20% 100%;
 }
 
 /*------/ Nav Pills  /------*/
