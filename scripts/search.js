@@ -1,21 +1,37 @@
 import { fetchDB } from "./db.js";
 
 document.addEventListener("DOMContentLoaded", async () => {
-	loadURLContent();
 	await setCurrentLocations();
-	setSubmitListener();
-	focusSubmitButton();
+	document.getElementById("submit").onclick = async () => queryForm();
+	overrideEnterKeyStroke();
+	loadURLContent();
 });
+
+function overrideEnterKeyStroke(){
+	document.addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+		document.getElementById("submit").click();
+  }
+});
+}
 
 function loadURLContent() {
 	const URLparams = new URLSearchParams(window.location.search);
 	const content = URLparams.get("content");
 
 	document.getElementById("name").value = content;
+	document.getElementById("submit").click();
 }
 
-function focusSubmitButton() {
-	document.getElementById("submit").focus;
+async function setCurrentLocations(){
+	const option = element => "<option>" + element + "</option>";
+	const db = await fetchDB();
+	let cities = new Set();
+	cities.add("All Cities");
+	db.forEach(x => cities.add(x.geo.address.addressLocality))
+	const options = Array.from(cities).map(x => option(x));
+	document.getElementById("city").innerHTML = options;
 }
 
 function getFormData(documentDOM) {
@@ -49,19 +65,7 @@ function generateKeywordFilter(data, keyword_map) {
 	return keyword_filter;
 }
 
-async function setCurrentLocations(){
-	const option = element => "<option>" + element + "</option>";
-	const db = await fetchDB();
-	let cities = new Set();
-	cities.add("All Cities");
-	db.forEach(x => cities.add(x.geo.address.addressLocality))
-	console.log(cities);
-	const options = Array.from(cities).map(x => option(x));
-	document.getElementById("city").innerHTML = options;
-}
-
-function setSubmitListener() {
-	document.getElementById("submit").onclick = async () => {
+async function queryForm() {
 		const form_data = getFormData(document);
 
 		// filter values depending on input
@@ -98,5 +102,4 @@ function setSubmitListener() {
 		);
 
 		console.log(search);
-	};
 }
