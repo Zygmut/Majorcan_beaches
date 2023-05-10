@@ -1,6 +1,4 @@
 h2 {
-	padding-bottom: 1.8rem;
-	margin-bottom: 1rem;
 	position: relative;
 }
 
@@ -10,10 +8,13 @@ h2:after {
 	width: 70px;
 	height: 4px;
 	background-color: var(--accent-color);
-	bottom: 20px;
+	bottom: -0.3rem;
 	left: 0;
 }
 
+.br-15 {
+	border-radius: 15px;
+}
 .form-check {
 	margin-top: 1rem;
 }
