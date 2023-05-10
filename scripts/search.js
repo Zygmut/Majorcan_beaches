@@ -145,7 +145,7 @@ function generateTag(name) {
 function generateBeach(id, name, tags, img_url) {
 	let str = `<div class="col-12 col-md-6 col-lg-4 gap-3 py-3">
 						<div class="card card-box m-0">
-							<a href="beach.html">
+							<a href="beach.html?id=${id}">
 
 								<div class="card-overlay">
 									<div class="card-overlay-content">
