@@ -1,6 +1,9 @@
 import { fetchDB } from "./db.js";
 
+let db;
+
 document.addEventListener("DOMContentLoaded", async () => {
+	db = await fetchDB();
 	await setCurrentLocations();
 	document.getElementById("submit").onclick = async () => queryForm();
 	overrideEnterKeyStroke();
@@ -26,11 +29,13 @@ function loadURLContent() {
 
 async function setCurrentLocations(){
 	const option = element => "<option>" + element + "</option>";
-	const db = await fetchDB();
+
 	let cities = new Set();
 	cities.add("All Cities");
 	db.forEach(x => cities.add(x.geo.address.addressLocality))
+
 	const options = Array.from(cities).map(x => option(x));
+
 	document.getElementById("city").innerHTML = options;
 }
 
@@ -88,8 +93,6 @@ async function queryForm() {
 
 		const filter_city = (item, city) =>
 			city === "All Cities" || item.geo.address.addressLocality === city;
-
-		const db = await fetchDB();
 
 		const search = db.filter((item) =>
 				filter_city(item, form_data.city) && filter_name(item, form_data.name) && filter_keywords(item, keyword_filter)
