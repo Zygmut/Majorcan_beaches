@@ -15,14 +15,14 @@ h2:after {
 .br-15 {
 	border-radius: 15px;
 }
-.form-check {
-	margin-top: 1rem;
-}
 
+.emoji-label {
+	min-width: 4rem;
+	text-align: center;
+}
 .form-check-label.emoji-label {
 	font-size: 2rem;
 	line-height: 1;
-	margin-right: 1rem;
 	cursor: pointer;
 	background-color: var(--secondary-background-color);
 	padding: 0.5rem;
