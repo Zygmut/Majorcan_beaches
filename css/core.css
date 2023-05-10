@@ -82,3 +82,9 @@ body {
 	visibility: visible;
 	opacity: 1;
 }
+
+#header-icon{
+	width: 2rem;
+	height: 2rem;
+	margin-right : 1rem;
+}
