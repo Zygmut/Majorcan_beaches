@@ -81,8 +81,8 @@ h2:after {
 img {
 	aspect-ratio: 1;
 	object-fit: cover;
-	object-position: 20% 100%;
 }
+
 .img-overlay {
 	filter: brightness(0.7);
 }
