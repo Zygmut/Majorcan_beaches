@@ -53,7 +53,6 @@ function loadURLContent() {
 function loadBeachContent() {
 	const beach_id = loadURLContent();
 	const beach_data = db.find((x) => x["@identifier"] == beach_id);
-	console.log(beach_data);
 
 	loadName(beach_data);
 	loadLocation(beach_data);
@@ -61,7 +60,6 @@ function loadBeachContent() {
 	loadPhotos(beach_data);
 	loadVideo(beach_data);
 	loadTags(beach_data);
-	// Tags
 }
 
 function loadName(beach) {
