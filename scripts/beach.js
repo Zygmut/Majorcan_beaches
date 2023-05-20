@@ -1,5 +1,6 @@
 import { fetchDB } from "./db.js";
 
+
 let db;
 
 const langHash = {
@@ -60,6 +61,7 @@ function loadBeachContent() {
 	loadDescription(beach_data, "en");
 	loadPhotos(beach_data);
 	loadVideo(beach_data);
+	generateMap(beach_data);
 	loadTags(beach_data);
 	// Tags
 }
@@ -125,4 +127,13 @@ function enableContentSwipper() {
 			clickable: true,
 		},
 	});
+}
+
+function generateMap(beach) {
+	var map = L.map('map').setView([beach.geo.longitude, beach.geo.latitude], 13);
+
+	L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+		maxZoom: 19,
+		attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+	}).addTo(map);
 }

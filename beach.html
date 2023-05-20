@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome@1.1.8/styles.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox@3.2.0/dist/css/glightbox.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
 
 
 	<link rel="stylesheet" href="css/core.css">
@@ -144,9 +145,8 @@
 								<!-- Location -->
 								<div class="tab-pane fade show ratio ratio-1x1" id="pills-map" role="tabpanel"
 									aria-labelledby="pills-map-tab">
-									<iframe class="d-block w-100 br-15"
-										src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12259.53035428495!2d3.1189606999999997!3d39.8096254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2ses!4v1680457588991!5m2!1sen!2ses"
-										title="Google Maps Location" allowfullscreenx></iframe>
+									<div id="map"></div>
+
 								</div>
 							</div>
 
@@ -175,6 +175,17 @@
 									un adulto puede llegar sin problemas. Preciosas vistas y agua cristalina.
 								</p>
 							</article>
+
+							<div id="weather" class="col-xl-6 px-0 mt-0">
+									<div class="col">
+										  <p class="card-text">Temp </p>
+										  <p class="card-text">Pressure</p>
+										  <p class="card-text">Humidty</p>
+										  <p class="card-text">UV Index</p>
+										  <p class="card-text">Wind speed and direction</p>				  
+									</div>
+								  
+							</div>
 
 							<!-- Comments -->
 							<section id="comment-section" class="px-0">
@@ -267,6 +278,9 @@
 	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 	<script type="module" src="scripts/db.js"></script>
 	<script type="module" src="scripts/beach.js"></script>
+	<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+     crossorigin=""></script>
 </body>
 
 </html>
