@@ -32,7 +32,11 @@ const espToEngHash = {
 	arena: "sandy",
 	roca: "rocky",
 };
-
+var beachBatches = [];
+var paginations = [];
+var numberOfPaginations;
+var actual_pagination;
+//Main event and function triggerer
 document.addEventListener("DOMContentLoaded", async () => {
 	db = await fetchDB();
 	await setCurrentLocations();
@@ -40,7 +44,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 	overrideEnterKeyStroke();
 	loadURLContent();
 });
-
+//Misc
 function overrideEnterKeyStroke() {
 	document.addEventListener("keypress", function (event) {
 		if (event.key === "Enter") {
@@ -49,7 +53,7 @@ function overrideEnterKeyStroke() {
 		}
 	});
 }
-
+//Load content from URL
 function loadURLContent() {
 	const URLparams = new URLSearchParams(window.location.search);
 	const content = URLparams.get("content");
@@ -57,7 +61,7 @@ function loadURLContent() {
 	document.getElementById("name").value = content;
 	document.getElementById("submit").click();
 }
-
+//Set curren locations available in the db to the Form
 async function setCurrentLocations() {
 	const option = (element) => "<option>" + element + "</option>";
 
@@ -100,7 +104,7 @@ function generateKeywordFilter(data, keyword_map) {
 	}
 	return keyword_filter;
 }
-
+//Query in db based on form
 async function queryForm() {
 	const beach_listing = document.getElementById("beaches");
 	beach_listing.innerHTML = "";
@@ -124,16 +128,166 @@ async function queryForm() {
 			filter_name(item, form_data.name) &&
 			filter_keywords(item, keyword_filter)
 	);
-
+	//Load every beach matching form data in here
 	const beaches = Array.from(
 		search.map((x) =>
 			generateBeach(x["@identifier"], x.name, x.keywords, x.photo[0])
 		)
 	);
+	const pages = document.getElementById('pages');
+	removeChildrens(pages);
+	const rightButton = document.getElementById('right-button');
+	const leftButton = document.getElementById('left-button');
+	rightButton.style.display='none';
+	leftButton.style.display='none';
+	//Listing changes must be done here
+	//beaches.forEach((element) => (beach_listing.innerHTML += element));
 
-	beaches.forEach((element) => (beach_listing.innerHTML += element));
+	//Max number of beaches per batch
+	const maxSizeBatch = 9;
+	var indexBatch = 0;
+	var batch= [];
+	var count=0;
+	//Reset batches
+	beachBatches = [];
+	for (let beach of beaches){
+		count++;
+		batch.push(beach);
+		if(count==maxSizeBatch){
+			beachBatches.splice(indexBatch,0,batch);
+			batch = [];
+			count=0;
+			indexBatch++;
+		}
+
+	}
+	//Lower batch size
+	if (batch.length<maxSizeBatch && batch.length > 0){
+		beachBatches.splice(indexBatch,0,batch);
+	}
+	//Max number of paginations needed according to query results
+	const maxPagesPerPagination = 5;
+	numberOfPaginations = Math.ceil(beachBatches.length/maxPagesPerPagination);
+	//Reset paginations
+	paginations = [];
+	var paginationIndex = 0;
+	var countPages = 0;
+	var pagination = [];
+	//Pagination adding
+	for(let batch of beachBatches){
+		countPages++;
+		pagination.push(batch);
+		if(countPages==maxPagesPerPagination){
+			paginations.splice(paginationIndex,0,pagination);
+			countPages=0;
+			paginationIndex++;
+			pagination=[];
+		}
+
+	}
+	if (pagination.length<maxPagesPerPagination && pagination.length > 0){
+		paginations.splice(paginationIndex,0,pagination);
+	}
+	console.log(paginations);
+	console.log(beachBatches.length);
+	console.log(numberOfPaginations);
+
+	//First batch visualization
+	for(let i=0; i<beachBatches[0].length;i++){
+		beach_listing.innerHTML += beachBatches[0][i];
+	}
+	//Paginations start in 0
+	actual_pagination=0;
+	addPages(actual_pagination);
+	if(actual_pagination+1 < numberOfPaginations){
+		const rightButton = document.getElementById('right-button');
+		rightButton.style.display='block';
+	}
+	initNavigationButtons();
+
 }
 
+function initNavigationButtons(){
+	const rightButton = document.getElementById('right-button');
+	const leftButton = document.getElementById('left-button');
+	rightButton.addEventListener('click', function(){
+		if(actual_pagination < numberOfPaginations-1){
+			actual_pagination++;
+			console.log(actual_pagination );
+			console.log(numberOfPaginations);
+			updatePagination(actual_pagination);
+		}
+	});
+	leftButton.addEventListener('click', function(){
+		if(actual_pagination > 0){
+			actual_pagination--;
+			updatePagination(actual_pagination);
+		}
+	});
+}
+// Remove all the children of an element
+function removeChildrens(parent) {
+	while (parent.firstChild) {
+		parent.removeChild(parent.firstChild);
+	}
+}
+
+function addPages(numberOfPagination) {
+  const pages = document.getElementById('pages');
+  var number = numberOfPagination * 5 + 1;
+  var index = 0;
+  for (let _ in paginations[actual_pagination]) {
+    const page = document.createElement('li');
+    const pButton = document.createElement('button');
+
+    pButton.classList.add('btn', 'btn-primary', 'rounded-circle');
+    pButton.innerHTML = number;
+
+    // Utilizamos una función externa para crear un cierre alrededor del valor de index
+    const createButtonClickListener = function (currentIndex) {
+      return function () {
+        updateBatch(currentIndex);
+        pButton.classList.add('selected');
+      };
+    };
+
+    pButton.addEventListener('click', createButtonClickListener(index));
+
+    page.appendChild(pButton);
+    pages.appendChild(page);
+    number++;
+    index++;
+  }
+}
+function updatePagination(pagination){
+	const pages = document.getElementById('pages');
+	const rightButton = document.getElementById('right-button');
+	const leftButton = document.getElementById('left-button');
+
+	if(actual_pagination == numberOfPaginations-1){
+		rightButton.style.display='none';
+	}else{
+		rightButton.style.display='block';
+	}
+	if(actual_pagination == 0){
+		leftButton.style.display='none';
+	}else{
+		leftButton.style.display='block';
+	}
+	removeChildrens(pages);
+	addPages(pagination);
+	updateBatch(0);
+}
+function updateBatch(batch){
+
+	const beach_listing = document.getElementById('beaches');
+	removeChildrens(beach_listing);
+
+	for(let i = 0; i < paginations[actual_pagination][batch].length; i++) {
+		beach_listing.innerHTML += paginations[actual_pagination][batch][i];
+	}
+}
+//Misc to create
 function generateTag(name) {
 	return `
 												<li>
