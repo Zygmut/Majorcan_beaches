@@ -41,13 +41,7 @@ var actual_batch;
 document.addEventListener("DOMContentLoaded", async () => {
 	db = await fetchDB();
 	await setCurrentLocations();
-	document.getElementById("submit").onclick = async function() {
-		if(this.classList.contains('active')){
-			console.log("hola");
-			this.classList.remove('active');
-		}
-		await queryForm();
-	};
+	document.getElementById("submit").onclick = async () => queryForm();
 	overrideEnterKeyStroke();
 	loadURLContent();
 
@@ -152,7 +146,11 @@ async function queryForm() {
 			filter_keywords(item, keyword_filter)
 	);
 
-
+	if (form_data.city != "All Cities" || form_data.blue_flag != false|| form_data.type != "All types"|| form_data.hike != false
+		|| form_data.nudist != false ||form_data.parking != false|| form_data.first_aid != false || form_data.showers != false){
+		actual_batch=0;
+		actual_pagination=0;
+	}
 	//Load every beach matching form data in here
 	const beaches = Array.from(
 		search.map((x) =>
@@ -229,8 +227,8 @@ async function queryForm() {
 	}
 
 		//First batch visualization
-	for(let i=0; i<beachBatches[actual_batch].length;i++){
-		beach_listing.innerHTML += beachBatches[actual_batch][i];
+		for(let i=0; i<beachBatches[actual_batch].length;i++){
+			beach_listing.innerHTML += beachBatches[actual_batch][i];
 	}
 
 	addPages(actual_pagination);
@@ -286,7 +284,7 @@ function addPages(numberOfPagination) {
   for (let _ in paginations[actual_pagination]) {
     const page = document.createElement('li');
     const pButton = document.createElement('button');
-		pButton.setAttribute('id',index);
+
     pButton.classList.add('btn', 'btn-primary', 'rounded-circle');
     pButton.innerHTML = number;
 
