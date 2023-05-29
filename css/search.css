@@ -39,10 +39,16 @@ h2:after {
 .btn-primary {
 	background-color: var(--complementary-accent-color);
 	border: none;
+	transition: 0.2s ease-in-out;
 }
 
 .btn-primary:hover {
 	background-color: var(--accent-color);
+	border: none;
+	transition: 0.1s ease-in-out;
+}
+#submit:focus{
+	background-color: var(--complementary-accent-color);
 	border: none;
 	transition: 0.2s ease-in-out;
 }
@@ -138,7 +144,21 @@ img {
 #right-button{
 	display: none;
 }
-
+.page-selected{
+	background-color: var(--complementary-accent-color);
+	border: none;
+	transition: 0.2s ease-in-out;
+}
+#right-button:focus{
+	background-color: var(--complementary-accent-color);
+	border: none;
+	transition: 0.2s ease-in-out;
+}
+#left-button:focus{
+	background-color: var(--complementary-accent-color);
+	border: none;
+	transition: 0.2s ease-in-out;
+}
 #pagination-misc{
 	width: 50%;
 }

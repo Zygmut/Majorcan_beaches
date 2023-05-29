@@ -41,7 +41,13 @@ var actual_batch;
 document.addEventListener("DOMContentLoaded", async () => {
 	db = await fetchDB();
 	await setCurrentLocations();
-	document.getElementById("submit").onclick = async () => queryForm();
+	document.getElementById("submit").onclick = async function() {
+		if(this.classList.contains('active')){
+			console.log("hola");
+			this.classList.remove('active');
+		}
+		await queryForm();
+	};
 	overrideEnterKeyStroke();
 	loadURLContent();
 
@@ -280,7 +286,7 @@ function addPages(numberOfPagination) {
   for (let _ in paginations[actual_pagination]) {
     const page = document.createElement('li');
     const pButton = document.createElement('button');
-
+		pButton.setAttribute('id',index);
     pButton.classList.add('btn', 'btn-primary', 'rounded-circle');
     pButton.innerHTML = number;
 
