@@ -63,6 +63,8 @@ function loadBeachContent() {
 	loadVideo(beach_data);
 	generateMap(beach_data);
 	loadTags(beach_data);
+	textToSpeech(beach_data, "en");
+	weatherApi(beach_data)
 	// Tags
 }
 
@@ -108,7 +110,7 @@ function loadTags(beach) {
 		.forEach((x) => (tags.innerHTML += generateTag(x)));
 }
 
-function generateTag(name){
+function generateTag(name) {
 	return `<label title="${espToEngHash[name]}">${emojiHash[espToEngHash[name]]}</label>`
 }
 
@@ -130,10 +132,71 @@ function enableContentSwipper() {
 }
 
 function generateMap(beach) {
-	var map = L.map('map').setView([beach.geo.longitude, beach.geo.latitude], 13);
+	var map = L.map('map').setView([ beach.geo.latitude, beach.geo.longitude], 13);
 
 	L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 		maxZoom: 19,
 		attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 	}).addTo(map);
+	setTimeout(function () {
+		window.dispatchEvent(new Event("resize"));
+	}, 500);
 }
+
+function textToSpeech(beach, lang) {
+	textToSpeechButton.addEventListener(
+		"click",
+		function () {
+			var u = new SpeechSynthesisUtterance();
+			u.text = String(beach.description[langHash[lang]]);
+			u.lang = 'en-US';
+			u.rate = 1;
+			speechSynthesis.speak(u);
+		}
+	);
+}
+
+function weatherApi(beach) {
+
+	const lat = beach.geo.latitude;
+	const lon = beach.geo.longitude;
+	const apiKey = 'ca8606d4240b45a7bb3ac32d97789e1b';
+
+	const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}`;
+	fetch(url)
+		.then((resp) => resp.json())
+		//If city name is valid
+		.then((data) => {
+			console.log(data);
+			console.log(data.weather[0].icon);
+			console.log(data.weather[0].main);
+			console.log(data.weather[0].description);
+			console.log(data.name);
+			console.log(data.main.temp_min);
+			console.log(data.main.temp_max);
+			result.innerHTML = `
+        <h4 class="weather">${data.weather[0].main}</h4>
+        <img src="https://openweathermap.org/img/w/${data.weather[0].icon}.png">
+        <h1>${precise(data.main.temp-273)} &#176;</h1>
+        <div class="temp-container">
+            <div>
+                <h4 class="title">min</h4>
+                <h4 class="temp">${precise(data.main.temp_min-273)}&#176;</h4>
+            </div>
+            <div>
+                <h4 class="title">max</h4>
+                <h4 class="temp">${precise(data.main.temp_max-273)}&#176;</h4>
+            </div>
+        </div>
+        `;
+		})
+		//If city name is NOT valid
+		.catch(() => {
+			result.innerHTML = `<h3 class="msg">City not found</h3>`;
+		});
+}
+
+function precise(x) {
+	return x.toPrecision(3);
+  }
+
