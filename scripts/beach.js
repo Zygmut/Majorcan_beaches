@@ -54,7 +54,6 @@ function loadURLContent() {
 function loadBeachContent() {
 	const beach_id = loadURLContent();
 	const beach_data = db.find((x) => x["@identifier"] == beach_id);
-	console.log(beach_data);
 
 	loadName(beach_data);
 	loadLocation(beach_data);
@@ -65,7 +64,9 @@ function loadBeachContent() {
 	loadTags(beach_data);
 	textToSpeech(beach_data, "en");
 	weatherApi(beach_data)
-	// Tags
+
+
+
 }
 
 function loadName(beach) {
