@@ -1,11 +1,12 @@
 h2 {
 	position: relative;
+	width: 42%;
 }
 
 h2:after {
 	content: "";
 	position: absolute;
-	width: 70px;
+	width: inherit;
 	height: 4px;
 	background-color: var(--accent-color);
 	bottom: -0.3rem;
