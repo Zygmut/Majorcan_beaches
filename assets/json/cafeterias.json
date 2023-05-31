@@ -1,0 +1,2280 @@
+{
+   "@context": "https://schema.org",
+   "@type": "itemList",
+   "itemListElement": [
+      {
+         "@type": "CafeOrCoffeeShop",
+         "name": "Cafetería Parabellum",
+         "description": "¡Bienvenido a Cafetería Parabellum! Somos el lugar perfecto para los amantes de los juegos de mesa y las partidas de rol. Disfruta de deliciosas bebidas mientras juegas y sumérgete en la diversión. ¡Únete a nuestra comunidad de jugadores y vive una experiencia inolvidable!",
+         "address": {
+            "streetAddress": "Carrer del Bisbe Rafael Josep Verger, 6",
+            "addressLocality": "Palma",
+            "addressRegion": "Illes Balears",
+            "postalCode": "07010",
+            "addressCountry": "ES"
+         },
+         "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "39.590315478708625",
+            "longitude": "2.652479930691325"
+         },
+         "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.7",
+            "reviewCount": "49"
+         },
+         "openingHours": [
+            "Mo-Fr 11:00-22:00",
+            "Sa-Su 17:00-22:00"
+         ],
+         "contactPoint": {
+            "telephone": "971 91 91 31",
+            "email": "cafeparabellum@gmail.com"
+         },
+         "url": "https://www.instagram.com/parabellumcafeteria/?hl=es",
+         "image": [
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Cafetería Parabellum/imagen-1.webp",
+               "name": "Imagen 1 - Cafetería Parabellum"
+            },
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Cafetería Parabellum/imagen-2.webp",
+               "name": "Imagen 2 - Cafetería Parabellum"
+            },
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Cafetería Parabellum/imagen-3.webp",
+               "name": "Imagen 3 - Cafetería Parabellum"
+            }
+         ],
+         "priceRange": "$",
+         "acceptsReservations": false,
+         "hasMenu": false,
+         "events": [
+            {
+               "@context": "https://schema.org",
+               "@type": "Event",
+               "name": "Club de Lectura - MistBorn",
+               "about": "Club de Lectura del Libro 1 de la Saga MistBorn: El Imperio Final, por Brandom Sanderson",
+               "audience": "Todas las edades",
+               "isAccessibleForFree": true,
+               "startDate": "2023-06-07T18:30:00Z",
+               "endDate": "2023-06-07T20:00:00Z",
+               "offers": {},
+               "maximumPhysicalAttendeeCapacity": "80",
+               "eventStatus": "EventScheduled",
+               "performers": [
+                  {
+                     "name": "Alexelcapo",
+                     "url": "https://twitter.com/EvilAFM"
+                  }
+               ],
+               "image": [
+                  {
+                     "@type": "ImageObject",
+                     "url": "assets/img/eventos/Club de Lectura - MistBorn/imagen-1.webp",
+                     "name": "Imagen 1 - Club de Lectura - MistBorn"
+                  },
+                  {
+                     "@type": "ImageObject",
+                     "url": "assets/img/eventos/Club de Lectura - MistBorn/imagen-2.webp",
+                     "name": "Imagen 2 - Club de Lectura - MistBorn"
+                  },
+                  {
+                     "@type": "ImageObject",
+                     "url": "assets/img/eventos/Club de Lectura - MistBorn/imagen-3.webp",
+                     "name": "Imagen 3 - Club de Lectura - MistBorn"
+                  }
+               ]
+            },
+            {
+               "@context": "https://schema.org",
+               "@type": "Event",
+               "name": "JAM session con Robert Castelli",
+               "about": "Nuestras Jam Session ya son un imprescindible de los miércoles, ven y disfruta en directo de la bateria de Robert Castelli!",
+               "audience": "Todas las edades",
+               "isAccessibleForFree": true,
+               "startDate": "2023-05-17T21:30:00Z",
+               "endDate": "2023-05-17T23:30:00Z",
+               "offers": {},
+               "maximumPhysicalAttendeeCapacity": "80",
+               "eventStatus": "EventScheduled",
+               "performers": [
+                  {
+                     "name": "Robert Castelli",
+                     "url": "https://www.robertcastelli.com"
+                  }
+               ],
+               "image": [
+                  {
+                     "@type": "ImageObject",
+                     "url": "assets/img/eventos/JAM session con Robert Castelli/imagen-1.webp",
+                     "name": "Imagen 1 - JAM session con Robert Castelli"
+                  }
+               ]
+            }
+         ],
+         "keywords": [
+            "Juegos de mesa",
+            "Cartas",
+            "Música",
+            "Lectura",
+            "Libros",
+            "Comida y Bebida"
+         ]
+      },
+      {
+         "@type": "CafeOrCoffeeShop",
+         "name": "Espai Suscultura Coop",
+         "description": "El espacio Suscultura coop, gestionado por la Cooperativa de Consumo Corda i Poal de Palma, quiere desarrollar actividades culturales y de ajedrez y promocionar el producto local y Km 0 en su Bar.",
+         "address": {
+            "streetAddress": " C. de Miquel Capllonch, 33, local 1",
+            "addressLocality": "Palma",
+            "addressRegion": "Illes Balears",
+            "postalCode": "07010",
+            "addressCountry": "ES"
+         },
+         "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "39.59383977758444",
+            "longitude": "2.6532940687194424"
+         },
+         "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.6",
+            "reviewCount": "48"
+         },
+         "openingHours": [
+            "We-Fr 18:00-22:00"
+         ],
+         "contactPoint": {
+            "telephone": "657 18 51 12",
+            "email": "suscultura@gmail.com"
+         },
+         "url": "https://www.suscultura.cat/",
+         "image": [
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Espai Suscultura Coop/imagen-1.webp",
+               "name": "Imagen 1 - Espai Suscultura Coop"
+            },
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Espai Suscultura Coop/imagen-2.webp",
+               "name": "Imagen 2 - Espai Suscultura Coop"
+            }
+         ],
+         "priceRange": "$",
+         "acceptsReservations": false,
+         "hasMenu": false,
+         "events": [],
+         "keywords": [
+            "Juegos de mesa",
+            "Lectura",
+            "Música",
+            "Cultura"
+         ]
+      },
+      {
+         "@type": "CafeOrCoffeeShop",
+         "name": "Café Lisboa",
+         "description": "Un bar con mucho recorrido, encanto y solera de Palma (Mallorca) situado en el fantástico barrio de Santa Catalina. con una oferta cultural inigualable: OPEN MICS, JAM SESSIONS de JAZZ, BLUES, GROOVE/FUNK y LATINJAZZ.",
+         "address": {
+            "streetAddress": "Carrer de Sant Magí 33",
+            "addressLocality": "Palma",
+            "addressRegion": "Illes Balears",
+            "postalCode": "07013",
+            "addressCountry": "ES"
+         },
+         "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "39.59383977758444",
+            "longitude": "2.6532940687194424"
+         },
+         "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.3",
+            "reviewCount": "609"
+         },
+         "openingHours": [
+            "Mo-Sa 18:00-02:30"
+         ],
+         "contactPoint": {
+            "telephone": "661 78 56 67",
+            "email": "novocafelisboa@gmail.com"
+         },
+         "url": "https://cafelisboa.es/",
+         "image": [
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Café Lisboa/imagen-1.webp",
+               "name": "Imagen 1 - Café Lisboa"
+            },
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Café Lisboa/imagen-2.webp",
+               "name": "Imagen 2 - Café Lisboa"
+            },
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Café Lisboa/imagen-3.webp",
+               "name": "Imagen 3 - Café Lisboa"
+            },
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Café Lisboa/imagen-4.webp",
+               "name": "Imagen 4 - Café Lisboa"
+            }
+         ],
+         "priceRange": "$",
+         "acceptsReservations": true,
+         "hasMenu": true,
+         "events": [
+            {
+               "@context": "https://schema.org",
+               "@type": "Event",
+               "name": "JAM session con Robert Castelli",
+               "about": "Nuestras Jam Session ya son un imprescindible de los miércoles, ven y disfruta en directo de la bateria de Robert Castelli!",
+               "audience": "Todas las edades",
+               "isAccessibleForFree": true,
+               "startDate": "2023-06-04T21:30:00Z",
+               "endDate": "2023-06-04T23:30:00Z",
+               "offers": {},
+               "maximumPhysicalAttendeeCapacity": "80",
+               "eventStatus": "EventScheduled",
+               "performers": [
+                  {
+                     "name": "Robert Castelli",
+                     "url": "https://www.robertcastelli.com"
+                  }
+               ],
+               "image": [
+                  {
+                     "@type": "ImageObject",
+                     "url": "assets/img/eventos/JAM session con Robert Castelli/imagen-1.webp",
+                     "name": "Imagen 1 - JAM session con Robert Castelli"
+                  }
+               ]
+            }
+         ],
+         "keywords": [
+            "Música",
+            "Cultura"
+         ]
+      },
+      {
+         "@type": "CafeOrCoffeeShop",
+         "name": "Cafè Barroco",
+         "description": "Cafè Barroco, un café al que venir con tu pareja o con tus amigos a jugar, a tomarte un chocolate a la taza, a cenar o un buen postre después de tu cena favorita. Nuestro objetivo, hacerte sentir como si estuvieras en tu casa.",
+         "address": {
+            "streetAddress": "Carrer de Margalida Caimari, 17",
+            "addressLocality": "Palma",
+            "addressRegion": "Illes Balears",
+            "postalCode": "07005",
+            "addressCountry": "ES"
+         },
+         "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "39.57558081120033",
+            "longitude": "2.6570538827888535"
+         },
+         "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.5",
+            "reviewCount": "464"
+         },
+         "openingHours": [
+            "Tu-Sa 17:00-00:00"
+         ],
+         "contactPoint": {
+            "telephone": "613 01 47 88",
+            "email": "noucafebarroco@gmail.com"
+         },
+         "url": "https://www.facebook.com/cafebarroco",
+         "image": [
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Cafè Barroco/imagen-1.webp",
+               "name": "Imagen 1 - Cafè Barroco"
+            },
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Cafè Barroco/imagen-2.webp",
+               "name": "Imagen 2 - Cafè Barroco"
+            },
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Cafè Barroco/imagen-3.webp",
+               "name": "Imagen 3 - Cafè Barroco"
+            }
+         ],
+         "priceRange": "$",
+         "acceptsReservations": true,
+         "hasMenu": true,
+         "events": [],
+         "keywords": [
+            "Música",
+            "Cultura",
+            "Magia"
+         ]
+      },
+      {
+         "@type": "CafeOrCoffeeShop",
+         "name": "Agua Bar",
+         "description": "Pub de conciertos de rock y jazz con micrófono abierto los domingos para que los músicos suban a tocar.",
+         "address": {
+            "streetAddress": "Carrer de Jaume Ferrer, 6",
+            "addressLocality": "Palma",
+            "addressRegion": "Illes Balears",
+            "postalCode": "07012",
+            "addressCountry": "ES"
+         },
+         "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "39.56891532261607",
+            "longitude": "2.6446060537398743"
+         },
+         "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.3",
+            "reviewCount": "377"
+         },
+         "openingHours": [
+            "Su-Th 19:00-01:00",
+            "Fr-Sa 19:00-03:00"
+         ],
+         "contactPoint": {
+            "telephone": "676 30 65 31",
+            "email": "aguabar@gmail.com"
+         },
+         "url": "https://www.aguabar.com/",
+         "image": [
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Agua Bar/imagen-1.webp",
+               "name": "Imagen 1 - Agua Bar"
+            },
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Agua Bar/imagen-2.webp",
+               "name": "Imagen 2 - Agua Bar"
+            },
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Agua Bar/imagen-3.webp",
+               "name": "Imagen 3 - Agua Bar"
+            }
+         ],
+         "priceRange": "$",
+         "acceptsReservations": false,
+         "hasMenu": false,
+         "events": [
+            {
+               "@context": "https://schema.org",
+               "@type": "Event",
+               "name": "JAM session con Robert Castelli",
+               "about": "Nuestras Jam Session ya son un imprescindible de los miércoles, ven y disfruta en directo de la bateria de Robert Castelli!",
+               "audience": "Todas las edades",
+               "isAccessibleForFree": true,
+               "startDate": "2023-05-25T21:30:00Z",
+               "endDate": "2023-05-25T23:30:00Z",
+               "offers": {},
+               "maximumPhysicalAttendeeCapacity": "80",
+               "eventStatus": "EventScheduled",
+               "performers": [
+                  {
+                     "name": "Robert Castelli",
+                     "url": "https://www.robertcastelli.com"
+                  }
+               ],
+               "image": [
+                  {
+                     "@type": "ImageObject",
+                     "url": "assets/img/eventos/JAM session con Robert Castelli/imagen-1.webp",
+                     "name": "Imagen 1 - JAM session con Robert Castelli"
+                  }
+               ]
+            }
+         ],
+         "keywords": [
+            "Música",
+            "Monólogos",
+            "Open Mic"
+         ]
+      },
+      {
+         "@type": "CafeOrCoffeeShop",
+         "name": "Café a Tres Bandas",
+         "description": "Conciertos, libros, billares y videojuegos en un café con carta de tapas eclécticas y cervezas artesanas.",
+         "address": {
+            "streetAddress": "Plaça de Barcelona, 20",
+            "addressLocality": "Palma",
+            "addressRegion": "Illes Balears",
+            "postalCode": "07011",
+            "addressCountry": "ES"
+         },
+         "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "39.579586870681396",
+            "longitude": "2.6398806117517215"
+         },
+         "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.6",
+            "reviewCount": "193"
+         },
+         "openingHours": [
+            "Mo-Th 18:00-00:00",
+            "Fr-Sa 18:00-01:00"
+         ],
+         "contactPoint": {
+            "telephone": "971 28 26 03",
+            "email": "cafeatresbandas@gmail.com"
+         },
+         "url": "https://es-es.facebook.com/cafetresbandas/",
+         "image": [
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Café a Tres Bandas/imagen-1.webp",
+               "name": "Imagen 1 - Café a Tres Bandas"
+            },
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Café a Tres Bandas/imagen-2.webp",
+               "name": "Imagen 2 - Café a Tres Bandas"
+            },
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Café a Tres Bandas/imagen-3.webp",
+               "name": "Imagen 3 - Café a Tres Bandas"
+            },
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Café a Tres Bandas/imagen-4.webp",
+               "name": "Imagen 4 - Café a Tres Bandas"
+            }
+         ],
+         "priceRange": "$",
+         "acceptsReservations": true,
+         "hasMenu": true,
+         "events": [
+            {
+               "@context": "https://schema.org",
+               "@type": "Event",
+               "name": "Clara Andrés en Café a Tres Bandas",
+               "about": "La cantautora valenciana Clara Andrés visita el Café a Tres Bandas para presentar su galardonado “Capfico”, premio Carles Santos de la música valenciana al mejor disco de canción de autor.",
+               "audience": "Todas las edades",
+               "isAccessibleForFree": false,
+               "startDate": "2023-05-13T21:00:00Z",
+               "endDate": "2023-05-13T23:00:00Z",
+               "offers": {
+                  "@type": "Offer",
+                  "price": "10.40",
+                  "priceCurrency": "EUR",
+                  "url": "https://ticketandroll.com/evento/clara-andres-en-cafe-a-tres-bandas/"
+               },
+               "maximumPhysicalAttendeeCapacity": "50",
+               "eventStatus": "EventScheduled",
+               "performers": [
+                  {
+                     "name": "Clara Andrés",
+                     "url": "https://twitter.com/clara_andres?lang=es"
+                  }
+               ],
+               "image": [
+                  {
+                     "@type": "ImageObject",
+                     "url": "assets/img/eventos/Clara Andrés en Café a Tres Bandas/imagen-1.webp",
+                     "name": "Imagen 1 - Clara Andrés en Café a Tres Bandas"
+                  },
+                  {
+                     "@type": "ImageObject",
+                     "url": "assets/img/eventos/Clara Andrés en Café a Tres Bandas/imagen-2.webp",
+                     "name": "Imagen 2 - Clara Andrés en Café a Tres Bandas"
+                  },
+                  {
+                     "@type": "ImageObject",
+                     "url": "assets/img/eventos/Clara Andrés en Café a Tres Bandas/imagen-3.webp",
+                     "name": "Imagen 3 - Clara Andrés en Café a Tres Bandas"
+                  },
+                  {
+                     "@type": "ImageObject",
+                     "url": "assets/img/eventos/Clara Andrés en Café a Tres Bandas/imagen-4.webp",
+                     "name": "Imagen 4 - Clara Andrés en Café a Tres Bandas"
+                  }
+               ]
+            },
+            {
+               "@context": "https://schema.org",
+               "@type": "Event",
+               "name": "Daniel Higiénico",
+               "about": "Daniel Higiénico presenta \"Cancionólogos\" en el Café A Tres Bandas de Palma.",
+               "audience": "16 años",
+               "isAccessibleForFree": false,
+               "startDate": "2023-05-26T21:00:00Z",
+               "endDate": "2023-05-26T23:00:00Z",
+               "offers": {
+                  "@type": "Offer",
+                  "price": "10.00",
+                  "priceCurrency": "EUR",
+                  "url": "https://ticketib.com/es/events/daniel-higienico-en-palma-de-mallorca-07011-palma"
+               },
+               "maximumPhysicalAttendeeCapacity": "50",
+               "eventStatus": "EventScheduled",
+               "performers": [
+                  {
+                     "name": "Daniel Higiénico",
+                     "url": "https://www.danielhigienico.com"
+                  }
+               ],
+               "image": [
+                  {
+                     "@type": "ImageObject",
+                     "url": "assets/img/eventos/Daniel Higiénico/imagen-1.webp",
+                     "name": "Imagen 1 - Daniel Higiénico"
+                  },
+                  {
+                     "@type": "ImageObject",
+                     "url": "assets/img/eventos/Daniel Higiénico/imagen-2.webp",
+                     "name": "Imagen 2 - Daniel Higiénico"
+                  },
+                  {
+                     "@type": "ImageObject",
+                     "url": "assets/img/eventos/Daniel Higiénico/imagen-3.webp",
+                     "name": "Imagen 3 - Daniel Higiénico"
+                  }
+               ]
+            },
+            {
+               "@context": "https://schema.org",
+               "@type": "Event",
+               "name": "Monólogo Edén Serrano (De aquí no sale)",
+               "about": "«De aquí no sale» es el típico nombre de show de comedia que pretende ir de canallita y transgresor. El típico título que quiere llamar tu atención sobre el resto de planes que te puedan surgir.",
+               "audience": "16 años",
+               "isAccessibleForFree": false,
+               "startDate": "2023-06-10T21:30:00Z",
+               "endDate": "2023-06-10T23:00:00Z",
+               "offers": {
+                  "@type": "Offer",
+                  "price": "8.00",
+                  "priceCurrency": "EUR",
+                  "url": "https://entradas.ticketrona.com/events/de-aqui-no-sale-eden-serrano"
+               },
+               "maximumPhysicalAttendeeCapacity": "50",
+               "eventStatus": "EventScheduled",
+               "performers": [
+                  {
+                     "name": "Edén Serrano",
+                     "url": "https://edenserrano.es"
+                  }
+               ],
+               "image": [
+                  {
+                     "@type": "ImageObject",
+                     "url": "assets/img/eventos/Monólogo Edén Serrano (De aquí no sale)/imagen-1.webp",
+                     "name": "Imagen 1 - Monólogo Edén Serrano (De aquí no sale)"
+                  },
+                  {
+                     "@type": "ImageObject",
+                     "url": "assets/img/eventos/Monólogo Edén Serrano (De aquí no sale)/imagen-2.webp",
+                     "name": "Imagen 2 - Monólogo Edén Serrano (De aquí no sale)"
+                  },
+                  {
+                     "@type": "ImageObject",
+                     "url": "assets/img/eventos/Monólogo Edén Serrano (De aquí no sale)/imagen-3.webp",
+                     "name": "Imagen 3 - Monólogo Edén Serrano (De aquí no sale)"
+                  }
+               ]
+            },
+            {
+               "@context": "https://schema.org",
+               "@type": "Event",
+               "name": "Dani Flaco en Palma de Mallorca",
+               "about": "Gira «Bailemos un bis» 2023. Entradas a la venta a partir del 2 de Enero a las 10h.",
+               "audience": "Todas las edades",
+               "isAccessibleForFree": false,
+               "startDate": "2023-07-08T19:00:00Z",
+               "endDate": "2023-07-08T23:00:00Z",
+               "offers": {
+                  "@type": "Offer",
+                  "price": "15.60",
+                  "priceCurrency": "EUR",
+                  "url": "https://ticketandroll.com/evento/dani-flaco-en-palma-de-mallorca/"
+               },
+               "maximumPhysicalAttendeeCapacity": "50",
+               "eventStatus": "EventScheduled",
+               "performers": [
+                  {
+                     "name": "Dani Flaco",
+                     "url": "http://daniflaco.es"
+                  }
+               ],
+               "image": [
+                  {
+                     "@type": "ImageObject",
+                     "url": "assets/img/eventos/Dani Flaco en Palma de Mallorca/imagen-1.webp",
+                     "name": "Imagen 1 - Dani Flaco en Palma de Mallorca"
+                  },
+                  {
+                     "@type": "ImageObject",
+                     "url": "assets/img/eventos/Dani Flaco en Palma de Mallorca/imagen-2.webp",
+                     "name": "Imagen 2 - Dani Flaco en Palma de Mallorca"
+                  },
+                  {
+                     "@type": "ImageObject",
+                     "url": "assets/img/eventos/Dani Flaco en Palma de Mallorca/imagen-3.webp",
+                     "name": "Imagen 3 - Dani Flaco en Palma de Mallorca"
+                  },
+                  {
+                     "@type": "ImageObject",
+                     "url": "assets/img/eventos/Dani Flaco en Palma de Mallorca/imagen-4.webp",
+                     "name": "Imagen 4 - Dani Flaco en Palma de Mallorca"
+                  }
+               ]
+            }
+         ],
+         "keywords": [
+            "Música",
+            "Monólogos",
+            "Stand up comedy",
+            "Canción de Autor",
+            "Folk",
+            "Pop"
+         ]
+      },
+      {
+         "@type": "CafeOrCoffeeShop",
+         "name": "Café l'Antiquari",
+         "description": "Tapas, ensaladas, sándwiches, sangría y cócteles en un bar llamativo de ambiente bohemio.",
+         "address": {
+            "streetAddress": "Carrer Arabí, 5",
+            "addressLocality": "Palma",
+            "addressRegion": "Illes Balears",
+            "postalCode": "07003",
+            "addressCountry": "ES"
+         },
+         "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "39.57740610044935",
+            "longitude": "2.651188859938025"
+         },
+         "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.4",
+            "reviewCount": "1350"
+         },
+         "openingHours": [
+            "Mo-Fr 18:00-00:30",
+            "Sa 10:30-17:00"
+         ],
+         "contactPoint": {
+            "telephone": "871 57 23 13",
+            "email": "cafeantiquaris@gmail.com"
+         },
+         "url": "https://es-es.facebook.com/cafeantiquari",
+         "image": [
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Café l'Antiquari/imagen-1.webp",
+               "name": "Imagen 1 - Café l'Antiquari"
+            },
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Café l'Antiquari/imagen-2.webp",
+               "name": "Imagen 2 - Café l'Antiquari"
+            },
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Café l'Antiquari/imagen-3.webp",
+               "name": "Imagen 3 - Café l'Antiquari"
+            }
+         ],
+         "priceRange": "$$$",
+         "acceptsReservations": true,
+         "hasMenu": true,
+         "events": [],
+         "keywords": [
+            "Música",
+            "Cultura",
+            "Espesctáculos",
+            "Comida"
+         ]
+      },
+      {
+         "@type": "CafeOrCoffeeShop",
+         "name": "Mandragora cafe",
+         "description": "Local ubicado en cala estancia, con música en directo cada fin de semana y cocina 100% casera , festejamos cumpleaños , cenas de empresas , organizamos tu evento a tu medida !!",
+         "address": {
+            "streetAddress": "Calle horaci, 36",
+            "addressLocality": "Palma",
+            "addressRegion": "Illes Balears",
+            "postalCode": "07610",
+            "addressCountry": "ES"
+         },
+         "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "39.5396521103593",
+            "longitude": "2.7140298587397407"
+         },
+         "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.4",
+            "reviewCount": "387"
+         },
+         "openingHours": [
+            "Tu-Th 15:00-02:00",
+            "Fr-Sa 15:00-03:00",
+            "Su 15:00-2:00"
+         ],
+         "contactPoint": {
+            "telephone": "664 86 11 50",
+            "email": "mandragoramallorca@gmail.com"
+         },
+         "url": "mandragoramallorca.com",
+         "image": [
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Mandragora cafe/imagen-1.webp",
+               "name": "Imagen 1 - Mandragora cafe"
+            },
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Mandragora cafe/imagen-2.webp",
+               "name": "Imagen 2 - Mandragora cafe"
+            },
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Mandragora cafe/imagen-3.webp",
+               "name": "Imagen 3 - Mandragora cafe"
+            }
+         ],
+         "priceRange": "$",
+         "acceptsReservations": true,
+         "hasMenu": true,
+         "events": [],
+         "keywords": [
+            "Música",
+            "Cultura",
+            "Espesctáculos",
+            "Entretenimiento"
+         ]
+      },
+      {
+         "@type": "CafeOrCoffeeShop",
+         "name": "La biblioteca de Babel",
+         "description": "Original librería de estética antigua que organiza conciertos y dispone de mesitas para tomarse un vino.",
+         "address": {
+            "streetAddress": "Carrer Arabí, 3",
+            "addressLocality": "Palma",
+            "addressRegion": "Illes Balears",
+            "postalCode": "07003",
+            "addressCountry": "ES"
+         },
+         "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "39.57682635942309",
+            "longitude": "2.6516766827017353"
+         },
+         "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.6",
+            "reviewCount": "702"
+         },
+         "openingHours": [
+            "Mo-Sa 10:00-14:00",
+            "Mo-Sa 17:00-21:00"
+         ],
+         "contactPoint": {
+            "telephone": "971 72 14 42",
+            "email": "babel@labibliotecadebabel.es"
+         },
+         "url": "http://www.labibliotecadebabel.es/",
+         "image": [
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/La biblioteca de Babel/imagen-1.webp",
+               "name": "Imagen 1 - La biblioteca de Babel"
+            },
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/La biblioteca de Babel/imagen-2.webp",
+               "name": "Imagen 2 - La biblioteca de Babel"
+            },
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/La biblioteca de Babel/imagen-3.webp",
+               "name": "Imagen 3 - La biblioteca de Babel"
+            },
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/La biblioteca de Babel/imagen-4.webp",
+               "name": "Imagen 4 - La biblioteca de Babel"
+            }
+         ],
+         "priceRange": "$$",
+         "acceptsReservations": true,
+         "hasMenu": true,
+         "events": [
+            {
+               "@context": "https://schema.org",
+               "@type": "Event",
+               "name": "Club de Lectura - MistBorn",
+               "about": "Club de Lectura del Libro 1 de la Saga MistBorn: El Imperio Final, por Brandom Sanderson",
+               "audience": "Todas las edades",
+               "isAccessibleForFree": true,
+               "startDate": "2023-06-09T18:30:00Z",
+               "endDate": "2023-06-09T20:00:00Z",
+               "offers": {},
+               "maximumPhysicalAttendeeCapacity": "80",
+               "eventStatus": "EventScheduled",
+               "performers": [
+                  {
+                     "name": "Alexelcapo",
+                     "url": "https://twitter.com/EvilAFM"
+                  }
+               ],
+               "image": [
+                  {
+                     "@type": "ImageObject",
+                     "url": "assets/img/eventos/Club de Lectura - MistBorn/imagen-1.webp",
+                     "name": "Imagen 1 - Club de Lectura - MistBorn"
+                  },
+                  {
+                     "@type": "ImageObject",
+                     "url": "assets/img/eventos/Club de Lectura - MistBorn/imagen-2.webp",
+                     "name": "Imagen 2 - Club de Lectura - MistBorn"
+                  },
+                  {
+                     "@type": "ImageObject",
+                     "url": "assets/img/eventos/Club de Lectura - MistBorn/imagen-3.webp",
+                     "name": "Imagen 3 - Club de Lectura - MistBorn"
+                  }
+               ]
+            }
+         ],
+         "keywords": [
+            "Copas",
+            "Cenas",
+            "Conciertos",
+            "Cumpleaños",
+            "Libros"
+         ]
+      },
+      {
+         "@type": "CafeOrCoffeeShop",
+         "name": "Literanta",
+         "description": "Tertulias y talleres de literatura en librería-cafetería con cafés y cócteles con nombres de obras y autores.",
+         "address": {
+            "streetAddress": "Carrer del Call, 4",
+            "addressLocality": "Palma",
+            "addressRegion": "Illes Balears",
+            "postalCode": "07001",
+            "addressCountry": "ES"
+         },
+         "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "39.57357312164679",
+            "longitude": "2.650565137026839"
+         },
+         "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.7",
+            "reviewCount": "186"
+         },
+         "openingHours": [
+            "Mo-Sa 10:00-13:30",
+            "Mo-Fr 17:00-20:00"
+         ],
+         "contactPoint": {
+            "telephone": "673 46 17 76",
+            "email": "literanta@literanta.com"
+         },
+         "url": "https://www.literanta.com/",
+         "image": [
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Literanta/imagen-1.webp",
+               "name": "Imagen 1 - Literanta"
+            },
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Literanta/imagen-2.webp",
+               "name": "Imagen 2 - Literanta"
+            },
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Literanta/imagen-3.webp",
+               "name": "Imagen 3 - Literanta"
+            }
+         ],
+         "priceRange": "$$",
+         "acceptsReservations": true,
+         "hasMenu": true,
+         "events": [
+            {
+               "@context": "https://schema.org",
+               "@type": "Event",
+               "name": "Club de Lectura - MistBorn",
+               "about": "Club de Lectura del Libro 1 de la Saga MistBorn: El Imperio Final, por Brandom Sanderson",
+               "audience": "Todas las edades",
+               "isAccessibleForFree": true,
+               "startDate": "2023-06-08T18:30:00Z",
+               "endDate": "2023-06-08T20:00:00Z",
+               "offers": {},
+               "maximumPhysicalAttendeeCapacity": "80",
+               "eventStatus": "EventScheduled",
+               "performers": [
+                  {
+                     "name": "Alexelcapo",
+                     "url": "https://twitter.com/EvilAFM"
+                  }
+               ],
+               "image": [
+                  {
+                     "@type": "ImageObject",
+                     "url": "assets/img/eventos/Club de Lectura - MistBorn/imagen-1.webp",
+                     "name": "Imagen 1 - Club de Lectura - MistBorn"
+                  },
+                  {
+                     "@type": "ImageObject",
+                     "url": "assets/img/eventos/Club de Lectura - MistBorn/imagen-2.webp",
+                     "name": "Imagen 2 - Club de Lectura - MistBorn"
+                  },
+                  {
+                     "@type": "ImageObject",
+                     "url": "assets/img/eventos/Club de Lectura - MistBorn/imagen-3.webp",
+                     "name": "Imagen 3 - Club de Lectura - MistBorn"
+                  }
+               ]
+            }
+         ],
+         "keywords": [
+            "Lectura",
+            "Cultura"
+         ]
+      },
+      {
+         "@type": "CafeOrCoffeeShop",
+         "name": "Café La Fabrique D'art",
+         "description": "Llonguets, bocadillos, helados artesanales, vermut, conservas, vinos, cavas.",
+         "address": {
+            "streetAddress": "Plaça de Raimundo Clar, 12",
+            "addressLocality": "Palma",
+            "addressRegion": "Illes Balears",
+            "postalCode": "07002",
+            "addressCountry": "ES"
+         },
+         "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "39.5704541",
+            "longitude": "2.6554177"
+         },
+         "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.5",
+            "reviewCount": "43"
+         },
+         "openingHours": [
+            "Mo-Fr 10:00-16:00",
+            "Fr-Sa 11:00-16:00",
+            "Fr-Sa 19:00-23:00"
+         ],
+         "contactPoint": {
+            "telephone": "600 89 27 68",
+            "email": "lafabrique12@gmail.com"
+         },
+         "url": "https://www.facebook.com/cafelafabriquedart/?locale=es_ES",
+         "image": [
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Café La Fabrique D'art/imagen-1.webp",
+               "name": "Imagen 1 - Café La Fabrique D'art"
+            },
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Café La Fabrique D'art/imagen-2.webp",
+               "name": "Imagen 2 - Café La Fabrique D'art"
+            },
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Café La Fabrique D'art/imagen-3.webp",
+               "name": "Imagen 3 - Café La Fabrique D'art"
+            }
+         ],
+         "priceRange": "$$",
+         "acceptsReservations": true,
+         "hasMenu": true,
+         "events": [],
+         "keywords": [
+            "Cultura",
+            "Conciertos",
+            "Arte"
+         ]
+      },
+      {
+         "@type": "CafeOrCoffeeShop",
+         "name": "Can Alcover",
+         "description": "Pa amb oli tomàtiga i companatge Aquesta casa (des de 1895 fins a la primeria dels anys 20) es convertí en un temple de l’Art, obert a la Poesia, al Pensament i a la llibertat d’escoles literàries.",
+         "address": {
+            "streetAddress": "Carrer de Sant Alonso, 24",
+            "addressLocality": "Palma",
+            "addressRegion": "Illes Balears",
+            "postalCode": "07001",
+            "addressCountry": "ES"
+         },
+         "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "39.5666004",
+            "longitude": "2.6526286"
+         },
+         "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.4",
+            "reviewCount": "134"
+         },
+         "openingHours": [
+            "Mo-Fr 10:00-14:00",
+            "Sa-Su 12:00-15:00",
+            "Mo-Su 17:00-23:00"
+         ],
+         "contactPoint": {
+            "telephone": "629 57 59 41",
+            "email": "secretaria@ocb.cat"
+         },
+         "url": "https://ocb.cat",
+         "image": [
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Can Alcover/imagen-1.webp",
+               "name": "Imagen 1 - Can Alcover"
+            },
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Can Alcover/imagen-2.webp",
+               "name": "Imagen 2 - Can Alcover"
+            }
+         ],
+         "priceRange": "$",
+         "acceptsReservations": true,
+         "hasMenu": false,
+         "events": [],
+         "keywords": [
+            "Cultura",
+            "Conciertos",
+            "Lectura",
+            "Libros"
+         ]
+      },
+      {
+         "@type": "CafeOrCoffeeShop",
+         "name": "Transilvania Cafetería-Museum",
+         "description": "Una nueva cafetería tematica , única y exclusiva en Palma especializado en colecciones figurativas.",
+         "address": {
+            "streetAddress": " Carrer de Jaume Ferran, 38",
+            "addressLocality": "Palma",
+            "addressRegion": "Illes Balears",
+            "postalCode": "07004",
+            "addressCountry": "ES"
+         },
+         "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "39.5819698",
+            "longitude": "2.6588922"
+         },
+         "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.5",
+            "reviewCount": "499"
+         },
+         "openingHours": [
+            "Tu-Th 17:00-24:00",
+            "Fr-Sa 17:00-01:00"
+         ],
+         "contactPoint": {
+            "telephone": "871 51 44 88",
+            "email": "elgatohaceartedebarrio@outlook.com"
+         },
+         "url": "https://www.facebook.com/museodecerapalma",
+         "image": [
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Transilvania Cafetería-Museum/imagen-1.webp",
+               "name": "Imagen 1 - Transilvania Cafetería-Museum"
+            },
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Transilvania Cafetería-Museum/imagen-2.webp",
+               "name": "Imagen 2 - Transilvania Cafetería-Museum"
+            },
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Transilvania Cafetería-Museum/imagen-3.webp",
+               "name": "Imagen 3 - Transilvania Cafetería-Museum"
+            }
+         ],
+         "priceRange": "$",
+         "acceptsReservations": false,
+         "hasMenu": false,
+         "events": [],
+         "keywords": [
+            "Cultura",
+            "Magia",
+            "Espesctáculos"
+         ]
+      },
+      {
+         "@type": "CafeOrCoffeeShop",
+         "name": "Cafè Espanyol",
+         "description": "Un lugar familiar y acogedor donde degustar un buen café y los famosos \"pa amb olis\" sin olvidarnos de nuestras originales ensaladas.",
+         "address": {
+            "streetAddress": "Carrer de Cabrit i Bassa, 2",
+            "addressLocality": "Palma",
+            "addressRegion": "Illes Balears",
+            "postalCode": "07014",
+            "addressCountry": "ES"
+         },
+         "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "39.5760893",
+            "longitude": "2.6344064"
+         },
+         "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.6",
+            "reviewCount": "97"
+         },
+         "openingHours": [
+            "Mo-Sa 7:15-21:00"
+         ],
+         "contactPoint": {
+            "telephone": "871 95 36 66",
+            "email": "cafe-espanyol@gmail.com"
+         },
+         "url": "https://cafe-espanyol.business.site/website/cafe-espanyol/",
+         "image": [
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Cafè Espanyol/imagen-1.webp",
+               "name": "Imagen 1 - Cafè Espanyol"
+            },
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Cafè Espanyol/imagen-2.webp",
+               "name": "Imagen 2 - Cafè Espanyol"
+            }
+         ],
+         "priceRange": "$",
+         "acceptsReservations": false,
+         "hasMenu": true,
+         "events": [],
+         "keywords": [
+            "Comida",
+            "Libros",
+            "Lectura"
+         ]
+      },
+      {
+         "@type": "CafeOrCoffeeShop",
+         "name": "Cafeteria Espai Natural",
+         "description": "Cafeteria Espai Natural es un lugar tranquilo y acogedor donde puedes disfrutar de un buen café rodeado de plantas y buena música. Perfecto para relajarte y disfrutar de un buen libro.",
+         "address": {
+            "streetAddress": "Costa de la Pols, 18",
+            "addressLocality": "Palma",
+            "addressRegion": "Illes Balears",
+            "postalCode": "07003",
+            "addressCountry": "ES"
+         },
+         "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "39.572503",
+            "longitude": "2.6508944"
+         },
+         "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "3.4",
+            "reviewCount": "52"
+         },
+         "openingHours": [
+            "Mo-Fr 07:00-20:00",
+            "Sa-Su 08:00-13:00"
+         ],
+         "contactPoint": {
+            "telephone": "871 51 44 88",
+            "email": "cafeespainatural@gmail.com"
+         },
+         "url": "https://es.restaurantguru.com/Cafeteria-Espai-Natural-Palma",
+         "image": [
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Cafeteria Espai Natural/imagen-1.webp",
+               "name": "Imagen 1 - Cafeteria Espai Natural"
+            },
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Cafeteria Espai Natural/imagen-2.webp",
+               "name": "Imagen 2 - Cafeteria Espai Natural"
+            }
+         ],
+         "priceRange": "$",
+         "acceptsReservations": false,
+         "hasMenu": true,
+         "events": [],
+         "keywords": [
+            "Libros",
+            "Lectura"
+         ]
+      },
+      {
+         "@type": "CafeOrCoffeeShop",
+         "name": "Goblintrader Mallorca",
+         "description": "Tienda Especialista en Mallorca en el mundo de las Miniaturas, Wargames, Juegos de mesa y Modelismo. Con Cafetería de juegos de mesa y Zona de juego.",
+         "address": {
+            "streetAddress": "Carrer de Rosselló i Cazador, 7",
+            "addressLocality": "Palma",
+            "addressRegion": "Illes Balears",
+            "postalCode": "07004",
+            "addressCountry": "ES"
+         },
+         "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "39.5814087",
+            "longitude": "2.6545752"
+         },
+         "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "308"
+         },
+         "openingHours": [
+            "Tu-Sa 11:00-14:00",
+            "Tu-Th 16:30-20:00",
+            "Fr-Sa 16:30-21:00"
+         ],
+         "contactPoint": {
+            "telephone": "871 85 80 67",
+            "email": "pedidosweb@goblintrader.es"
+         },
+         "url": "https://www.goblintrader.es/es/",
+         "image": [
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Goblintrader Mallorca/imagen-1.webp",
+               "name": "Imagen 1 - Goblintrader Mallorca"
+            },
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Goblintrader Mallorca/imagen-2.webp",
+               "name": "Imagen 2 - Goblintrader Mallorca"
+            },
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Goblintrader Mallorca/imagen-3.webp",
+               "name": "Imagen 3 - Goblintrader Mallorca"
+            }
+         ],
+         "priceRange": "$",
+         "acceptsReservations": false,
+         "hasMenu": true,
+         "events": [],
+         "keywords": [
+            "Juegos de mesa",
+            "Miniaturas",
+            "Entretenimiento"
+         ]
+      },
+      {
+         "@type": "CafeOrCoffeeShop",
+         "name": "Café Al Vent del Món",
+         "description": "Local chulo y acogedor donde pasar una tarde-noche con amigos jugando a juegos de mesa.",
+         "address": {
+            "streetAddress": "Carrer del Marquès de la Fontsanta, 82",
+            "addressLocality": "Palma",
+            "addressRegion": "Illes Balears",
+            "postalCode": "07005",
+            "addressCountry": "ES"
+         },
+         "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "39.5785379",
+            "longitude": "2.6619738"
+         },
+         "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.3",
+            "reviewCount": "460"
+         },
+         "openingHours": [
+            "Mo-Fr 09:00-13:00",
+            "Mo-Sa 16:00-02:00"
+         ],
+         "contactPoint": {
+            "telephone": "971 24 24 04",
+            "email": "cafealvent@gmail.com"
+         },
+         "url": "https://m.facebook.com/pages/Cafe-Al-Vent/191736204174184",
+         "image": [
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Café Al Vent del Món/imagen-1.webp",
+               "name": "Imagen 1 - Café Al Vent del Món"
+            },
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Café Al Vent del Món/imagen-2.webp",
+               "name": "Imagen 2 - Café Al Vent del Món"
+            }
+         ],
+         "priceRange": "$",
+         "acceptsReservations": true,
+         "hasMenu": true,
+         "events": [],
+         "keywords": [
+            "Música",
+            "Cenas",
+            "Juegos de mesa",
+            "Entretenimiento"
+         ]
+      },
+      {
+         "@type": "CafeOrCoffeeShop",
+         "name": "Sense Món",
+         "description": "Zumeria, teteria y cerveceria, acompañada de un gran surtido de tartas y tapas. Donde podras jugar a juegos de mesa.",
+         "address": {
+            "streetAddress": "Carrer de Sant Jaume, 5",
+            "addressLocality": "Palma",
+            "addressRegion": "Illes Balears",
+            "postalCode": "07012",
+            "addressCountry": "ES"
+         },
+         "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "39.572062",
+            "longitude": "2.6472883"
+         },
+         "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.5",
+            "reviewCount": "100"
+         },
+         "openingHours": [
+            "Mo-Th 08:30-14:30",
+            "Th-Sa 18:30-02:00"
+         ],
+         "contactPoint": {
+            "telephone": "871 71 16 27",
+            "email": "sensemon@hotmail.com"
+         },
+         "url": "https://sensemon.negocio.site/?utm_source=gmb&utm_medium=referral",
+         "image": [
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Sense Món/imagen-1.webp",
+               "name": "Imagen 1 - Sense Món"
+            },
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Sense Món/imagen-2.webp",
+               "name": "Imagen 2 - Sense Món"
+            },
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Sense Món/imagen-3.webp",
+               "name": "Imagen 3 - Sense Món"
+            }
+         ],
+         "priceRange": "$",
+         "acceptsReservations": false,
+         "hasMenu": true,
+         "events": [],
+         "keywords": [
+            "Juegos de mesa",
+            "Entretenimiento",
+            "Cenas"
+         ]
+      },
+      {
+         "@type": "CafeOrCoffeeShop",
+         "name": "Bar Akelarre",
+         "description": "Tu Café Pub en Ciudad Jardín, Mallorca",
+         "address": {
+            "streetAddress": "Carrer de l'Illa de Xipre, 33",
+            "addressLocality": "Palma",
+            "addressRegion": "Illes Balears",
+            "postalCode": "07007",
+            "addressCountry": "ES"
+         },
+         "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "39.5522853",
+            "longitude": "2.6918623"
+         },
+         "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.4",
+            "reviewCount": "508"
+         },
+         "openingHours": [
+            "Tu-Fr 18:00-03:00",
+            "Sa-Su 12:00-04:00"
+         ],
+         "contactPoint": {
+            "telephone": "971 26 50 98",
+            "email": "info@yocomunico.com"
+         },
+         "url": "https://www.facebook.com/CafePubAkelarre/?locale=es_ES",
+         "image": [
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Bar Akelarre/imagen-1.webp",
+               "name": "Imagen 1 - Bar Akelarre"
+            },
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Bar Akelarre/imagen-2.webp",
+               "name": "Imagen 2 - Bar Akelarre"
+            },
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Bar Akelarre/imagen-3.webp",
+               "name": "Imagen 3 - Bar Akelarre"
+            }
+         ],
+         "priceRange": "$$",
+         "acceptsReservations": false,
+         "hasMenu": true,
+         "events": [
+            {
+               "@context": "https://schema.org",
+               "@type": "Event",
+               "name": "JAM session con Robert Castelli",
+               "about": "Nuestras Jam Session ya son un imprescindible de los miércoles, ven y disfruta en directo de la bateria de Robert Castelli!",
+               "audience": "Todas las edades",
+               "isAccessibleForFree": true,
+               "startDate": "2023-06-01T21:30:00Z",
+               "endDate": "2023-06-01T23:30:00Z",
+               "offers": {},
+               "maximumPhysicalAttendeeCapacity": "80",
+               "eventStatus": "EventScheduled",
+               "performers": [
+                  {
+                     "name": "Robert Castelli",
+                     "url": "https://www.robertcastelli.com"
+                  }
+               ],
+               "image": [
+                  {
+                     "@type": "ImageObject",
+                     "url": "assets/img/eventos/JAM session con Robert Castelli/imagen-1.webp",
+                     "name": "Imagen 1 - JAM session con Robert Castelli"
+                  }
+               ]
+            }
+         ],
+         "keywords": [
+            "Entretenimiento",
+            "Conciertos",
+            "Música",
+            "Copas"
+         ]
+      },
+      {
+         "@type": "CafeOrCoffeeShop",
+         "name": "La Forja",
+         "description": "Somos el distribuidor exclusivo para España de Hidromiel La Forja. Se trata de una bebida alcohólica de origen milenario conocida como hidromiel.",
+         "address": {
+            "streetAddress": "Carrer de Pou, 8",
+            "addressLocality": "Palma",
+            "addressRegion": "Illes Balears",
+            "postalCode": "07013",
+            "addressCountry": "ES"
+         },
+         "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "39.5732018",
+            "longitude": "2.6393944"
+         },
+         "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.6",
+            "reviewCount": "972"
+         },
+         "openingHours": [
+            "Mo-Su 18:00-01:00"
+         ],
+         "contactPoint": {
+            "telephone": "871 85 80 67",
+            "email": "laforjavikinga@gmail.es"
+         },
+         "url": "https://twitter.com/laforjavikinga?lang=es",
+         "image": [
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/La Forja/imagen-1.webp",
+               "name": "Imagen 1 - La Forja"
+            },
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/La Forja/imagen-2.webp",
+               "name": "Imagen 2 - La Forja"
+            },
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/La Forja/imagen-3.webp",
+               "name": "Imagen 3 - La Forja"
+            }
+         ],
+         "priceRange": "$$",
+         "acceptsReservations": false,
+         "hasMenu": true,
+         "events": [],
+         "keywords": [
+            "Música",
+            "Copas"
+         ]
+      },
+      {
+         "@type": "CafeOrCoffeeShop",
+         "name": "Honky Tonk",
+         "description": "Este bar es uno de los pocos representantes de la cultura alternativa de la isla. Una vez que se abren las puertas, la decoración habla por sí sola: las paredes están sembradas de monopatines y carteles de iconos de la música rock, soul y funk.",
+         "address": {
+            "streetAddress": "Carrer de Sant Llorenç, 9",
+            "addressLocality": "Palma",
+            "addressRegion": "Illes Balears",
+            "postalCode": "07012",
+            "addressCountry": "ES"
+         },
+         "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "39.570705579037835",
+            "longitude": "2.6434401153456624"
+         },
+         "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.4",
+            "reviewCount": "376"
+         },
+         "openingHours": [
+            "Fr-Sa 21:00-03:00"
+          ],
+         "contactPoint": {
+            "telephone": "674 80 26 22",
+            "email": "honkytonk@gmail.es"
+         },
+         "url": "https://www.facebook.com/honkytonkpmi/?locale=es_ES",
+         "image": [
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Honky Tonk/imagen-1.webp",
+               "name": "Imagen 1 - Honky Tonk"
+            },
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Honky Tonk/imagen-2.webp",
+               "name": "Imagen 2 - Honky Tonk"
+            },
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Honky Tonk/imagen-3.webp",
+               "name": "Imagen 3 - Honky Tonk"
+            }
+         ],
+         "priceRange": "$",
+         "acceptsReservations": true,
+         "hasMenu": true,
+         "events": [
+            {
+               "@context": "https://schema.org",
+               "@type": "Event",
+               "name": "Mark Smith acústico",
+               "about": "Disfruta de la música en directo de Mark Smith, en la presentación de su nueva maqueta.",
+               "audience": "16 años",
+               "isAccessibleForFree": true,
+               "startDate": "2023-07-21T21:30:00Z",
+               "endDate": "2023-07-21T23:30:00Z",
+               "maximumPhysicalAttendeeCapacity": "50",
+               "eventStatus": "EventScheduled",
+               "performers": [
+                  {
+                     "name": "Mark Smith",
+                     "url": "https://twitter.com/dmsmifffy?lang=ess"
+                  }
+               ],
+               "image": [
+                  {
+                     "@type": "ImageObject",
+                     "url": "assets/img/eventos/Mark Smith acustico/imagen-1.webp",
+                     "name": "Imagen 1 - Mark Smith acústico"
+                  }
+               ]
+            }
+         ],
+         "keywords": [
+            "Música"
+         ]
+      },
+      {
+         "@type": "CafeOrCoffeeShop",
+         "name": "Midnightsun",
+         "description": "Midnightsun nace con la intención de ofrecerte siempre espectáculos musicales de calidad en los mejores entornos.",
+         "address": {
+            "streetAddress": "Carretera Palma -Soller Km17",
+            "addressLocality": "Bunyola",
+            "addressRegion": "Illes Balears",
+            "postalCode": "07110",
+            "addressCountry": "ES"
+         },
+         "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "39.71668006132893",
+            "longitude": "2.691884067455191"
+         },
+         "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.5",
+            "reviewCount": "22"
+         },
+         "openingHours": [
+            "Th-Su 19:00-01:30"
+          ],
+         "contactPoint": {
+            "telephone": "617 74 16 29",
+            "email": "midnsunmllc@gmail.es"
+         },
+         "url": "https://www.facebook.com/MidnightsunMallorca/",
+         "image": [
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Midnightsun/imagen-1.webp",
+               "name": "Imagen 1 - Midnightsun"
+            },
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Midnightsun/imagen-2.webp",
+               "name": "Imagen 2 - Midnightsun"
+            },
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Midnightsun/imagen-3.webp",
+               "name": "Imagen 3 - Midnightsun"
+            }
+         ],
+         "priceRange": "$$",
+         "acceptsReservations": true,
+         "hasMenu": true,
+         "events": [
+            {
+               "@context": "https://schema.org",
+               "@type": "Event",
+               "name": "Midnightsun Live Show",
+               "about": "Disfruta de las noches más mágicas de la isla de la mano de nuestros artistas.",
+               "audience": "18 años",
+               "isAccessibleForFree": false,
+               "startDate": "2023-06-27T19:30:00Z",
+               "endDate": "2023-06-27T23:30:00Z",
+               "offers": {
+                  "@type": "Offer",
+                  "price": "13.00",
+                  "priceCurrency": "EUR",
+                  "url": "https://www.midnightsun.es/?utm_source=facebook&utm_medium=ppc&utm_campaign=promoted_post&utm_content=oferta_es"
+               },
+               "maximumPhysicalAttendeeCapacity": "150",
+               "eventStatus": "EventScheduled",
+               "performers": [
+                  {
+                     "name": "Midnight Team",
+                     "url": "https://www.facebook.com/MidnightsunMallorca/"
+                  }
+               ],
+               "image": [
+                  {
+                     "@type": "ImageObject",
+                     "url": "assets/img/eventos/Midnightsun Live Show/imagen-1.webp",
+                     "name": "Imagen 1 - Midnightsun Live Show"
+                  }
+               ]
+            }
+         ],
+         "keywords": [
+            "Música",
+            "Cultura",
+            "Arte"
+         ]
+      },
+      {
+         "@type": "CafeOrCoffeeShop",
+         "name": "Pirates Adventure",
+         "description": "Escápate a un mundo mágico lleno de acción, emoción, comedia y diversión y disfrute de una experiencia inolvidable. Pirates Adventure es la mejor cena con espectáculo ideal para que, tanto mayores como pequeños, disfruten.",
+         "address": {
+            "streetAddress": "Camí Porrassa, 12",
+            "addressLocality": "Magaluf",
+            "addressRegion": "Illes Balears",
+            "postalCode": "07181",
+            "addressCountry": "ES"
+         },
+         "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "39.50489675969745",
+            "longitude": "2.5274331153422867"
+         },
+         "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.7",
+            "reviewCount": "1800"
+         },
+         "openingHours": [
+            "Tu-Su 19:00-23:30"
+          ],
+         "contactPoint": {
+            "telephone": "971 13 06 59",
+            "email": "reception@globobalear.com"
+         },
+         "url": "https://piratesadventure.com/es",
+         "image": [
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Pirates Adventure/imagen-1.webp",
+               "name": "Imagen 1 - Pirates Adventure"
+            },
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Pirates Adventure/imagen-2.webp",
+               "name": "Imagen 2 - Pirates Adventure"
+            },
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Pirates Adventure/imagen-3.webp",
+               "name": "Imagen 3 - Pirates Adventure"
+            }
+         ],
+         "priceRange": "$$",
+         "acceptsReservations": true,
+         "hasMenu": true,
+         "events": [
+            {
+               "@context": "https://schema.org",
+               "@type": "Event",
+               "name": "Pirates Show",
+               "about": "¡Suban a bordo La Hispaniola y disfruten de un mágico viaje en una época en que los piratas dominaban los siete mares!",
+               "audience": "Todas las edades",
+               "isAccessibleForFree": false,
+               "startDate": "2023-06-27T19:30:00Z",
+               "endDate": "2023-06-27T23:30:00Z",
+               "offers": {
+                  "@type": "Offer",
+                  "price": "49.00",
+                  "priceCurrency": "EUR",
+                  "url": "https://booking.piratesadventure.com/es/booking/step1?showId=1&_ga=2.198655979.599863733.1684058901-1170789820.1684058901&_gl=1*1mk6iq9*_ga*MTE3MDc4OTgyMC4xNjg0MDU4OTAx*_ga_JN3BHC1KVQ*MTY4NDA1OTIxMi4xLjAuMTY4NDA1OTQ1Ni42MC4wLjA."
+               },
+               "maximumPhysicalAttendeeCapacity": "1000",
+               "eventStatus": "EventScheduled",
+               "performers": [
+                  {
+                     "name": "Pirates Team",
+                     "url": "https://piratesadventure.com/es/sobre-nosotros"
+                  }
+               ],
+               "image": [
+                  {
+                     "@type": "ImageObject",
+                     "url": "assets/img/eventos/Pirates Show/imagen-1.webp",
+                     "name": "Imagen 1 - Pirates Show"
+                  }
+               ]
+            }
+         ],
+         "keywords": [
+            "Cultura",
+            "Teatro"
+         ]
+      },
+      {
+         "@type": "CafeOrCoffeeShop",
+         "name": "House of Son Amar",
+         "description": "Conocida por sus prestigiosos espectáculos y exclusivas actuaciones internacionales, la Casa de Son Amar se encuentra a sólo 10 minutos del centro de Palma de Mallorca y a 15 minutos de Calvià.",
+         "address": {
+            "streetAddress": "Carretera de Palma-Soller KM 10",
+            "addressLocality": "Palmanyola",
+            "addressRegion": "Illes Balears",
+            "postalCode": "07193",
+            "addressCountry": "ES"
+         },
+         "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "39.667492923002854",
+            "longitude": "2.6771045573111443"
+         },
+         "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.5",
+            "reviewCount": "3400"
+         },
+         "openingHours": [
+            "Fr-Sa 18:00-01:00"
+          ],
+         "contactPoint": {
+            "telephone": "971 61 75 33",
+            "email": "houseofsonamar@globobalear.com"
+         },
+         "url": "https://sonamar.com/es",
+         "image": [
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Son Amar/imagen-1.webp",
+               "name": "Imagen 1 - Son Amar"
+            },
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Son Amar/imagen-2.webp",
+               "name": "Imagen 2 - Son Amar"
+            },
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Son Amar/imagen-3.webp",
+               "name": "Imagen 3 - Son Amar"
+            }
+         ],
+         "priceRange": "$$$",
+         "acceptsReservations": true,
+         "hasMenu": true,
+         "events": [
+            {
+               "@context": "https://schema.org",
+               "@type": "Event",
+               "name": "Exhibit Air",
+               "about": "A fully immersive threatrical experience",
+               "audience": "18 años",
+               "isAccessibleForFree": false,
+               "startDate": "2023-07-21T21:00:00Z",
+               "endDate": "2023-07-21T00:00:00Z",
+               "offers": {
+                  "@type": "Offer",
+                  "price": "27.50",
+                  "priceCurrency": "EUR",
+                  "url": "https://reserva.sonamar.com/public/#/683a5bc3-1d92-45d6-9a09-f5557c5982c9/select-tickets"
+               },
+               "maximumPhysicalAttendeeCapacity": "850",
+               "eventStatus": "EventScheduled",
+               "performers": [
+                  {
+                     "name": "EXHIBIT",
+                     "url": "https://exhibitmallorca.com"
+                  }
+               ],
+               "image": [
+                  {
+                     "@type": "ImageObject",
+                     "url": "assets/img/eventos/Exhibit/imagen-1.webp",
+                     "name": "Imagen 1 - Exhibit"
+                  }
+               ]
+            },
+            {
+               "@context": "https://schema.org",
+               "@type": "Event",
+               "name": "Ohala",
+               "about": "Una experiencia familiar única con efectos especiales, acrobacias, danza y la última tecnología en sonido envolvente.",
+               "audience": "Todas las edades",
+               "isAccessibleForFree": false,
+               "startDate": "2023-08-21T21:00:00Z",
+               "endDate": "2023-08-21T00:00:00Z",
+               "offers": {
+                  "@type": "Offer",
+                  "price": "27.50",
+                  "priceCurrency": "EUR",
+                  "url": "https://reserva.sonamar.com/public/#/9060029b-2b8a-4ede-bd80-f87d4d48a081/select-tickets"
+               },
+               "maximumPhysicalAttendeeCapacity": "850",
+               "eventStatus": "EventScheduled",
+               "performers": [
+                  {
+                     "name": "Ohala",
+                     "url": "https://reserva.sonamar.com/public/#/events/1c322ec4-1b1e-40c7-95b9-7b7198028b8d/category"
+                  }
+               ],
+               "image": [
+                  {
+                     "@type": "ImageObject",
+                     "url": "assets/img/eventos/Ohala/imagen-1.webp",
+                     "name": "Imagen 1 - Ohala"
+                  },
+                  {
+                     "@type": "ImageObject",
+                     "url": "assets/img/eventos/Ohala/imagen-2.webp",
+                     "name": "Imagen 2 - Ohala"
+                  },
+                  {
+                     "@type": "ImageObject",
+                     "url": "assets/img/eventos/Ohala/imagen-3.webp",
+                     "name": "Imagen 3 - Ohala"
+                  }
+               ]
+            }
+         ],
+         "keywords": [
+            "Cultura",
+            "Teatro",
+            "Musica"
+         ]
+      },
+      {
+         "@type": "CafeOrCoffeeShop",
+         "name": "Bar Papis",
+         "description": "En Papis podrás degustar tanto de cócteles como cervezas de importación y nacionales. Pero dónde más destaca es la actuación en directo del dúo HOOKED.",
+         "address": {
+            "streetAddress": "Avenida Pedro Vaquer Ramis, 28",
+            "addressLocality": "Palma Nova",
+            "addressRegion": "Illes Balears",
+            "postalCode": "07181",
+            "addressCountry": "ES"
+         },
+         "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "39.51264908585635",
+            "longitude": "2.537242"
+         },
+         "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.4",
+            "reviewCount": "874"
+         },
+         "openingHours": [
+            "Mo-Su 09:00-03:00"
+         ],
+         "contactPoint": {
+            "telephone": "971 64 14 62",
+            "email": "barpapis@hotmail.com"
+         },
+         "url": "http://barpapislivemusic.com/?utm_source=gmb&utm_medium=referral",
+         "image": [
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Bar Papis/imagen-1.webp",
+               "name": "Imagen 1 - Bar Papis"
+            },
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Bar Papis/imagen-2.webp",
+               "name": "Imagen 2 - Bar Papis"
+            },
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Bar Papis/imagen-3.webp",
+               "name": "Imagen 3 - Bar Papis"
+            }
+         ],
+         "priceRange": "$$",
+         "acceptsReservations": true,
+         "hasMenu": true,
+         "events": [],
+         "keywords": [
+            "Musica",
+            "Copas"
+         ]
+      },
+      {
+         "@type": "CafeOrCoffeeShop",
+         "name": "Ca'n Molinas",
+         "description": "Dentro de la dilatada gama de productos artesanales que elaboramos en Ca'n Molinas, quizás el más emblemático sea la famosísima coca de patata, un hito de la cultura tradicional Mallorquina, enseña de identidad de la localidad Valldemossina, y como no, sello y marca de la calidad de este horno.",
+         "address": {
+            "streetAddress": "Via Blanquerna, 15",
+            "addressLocality": "Valldemossa",
+            "addressRegion": "Illes Balears",
+            "postalCode": "07170",
+            "addressCountry": "ES"
+         },
+         "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "39.70989478576917",
+            "longitude": "2.621613295889222"
+         },
+         "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.2",
+            "reviewCount": "2669"
+         },
+         "openingHours": [
+            "Mo-Sa 07:00-20:00"
+         ],
+         "contactPoint": {
+            "telephone": "971 61 22 47",
+            "email": "forncanmolinas@gmail.com"
+         },
+         "url": "http://www.canmolinas.com/",
+         "image": [
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Ca'n Molinas/imagen-1.webp",
+               "name": "Imagen 1 - Ca'n Molinas"
+            },
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Ca'n Molinas/imagen-2.webp",
+               "name": "Imagen 2 - Ca'n Molinas"
+            },
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Ca'n Molinas/imagen-3.webp",
+               "name": "Imagen 3 - Ca'n Molinas"
+            },
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Ca'n Molinas/imagen-4.webp",
+               "name": "Imagen 4 - Ca'n Molinas"
+            }
+         ],
+         "priceRange": "$$",
+         "acceptsReservations": false,
+         "hasMenu": true,
+         "events": [],
+         "keywords": [
+            "Comida y Bebida",
+            "Comida",
+            "Pasteleria"
+         ]
+      },
+      {
+         "@type": "CafeOrCoffeeShop",
+         "name": "Cappuccino Valldemossa",
+         "description": "Dentro de la dilatada gama de productos artesanales que elaboramos en Ca'n Molinas, quizás el más emblemático sea la famosísima coca de patata, un hito de la cultura tradicional Mallorquina, enseña de identidad de la localidad Valldemossina, y como no, sello y marca de la calidad de este horno.",
+         "address": {
+            "streetAddress": "Placa de Ramon Llull, 5",
+            "addressLocality": "Valldemossa",
+            "addressRegion": "Illes Balears",
+            "postalCode": "07170",
+            "addressCountry": "ES"
+         },
+         "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "39.7100319640338",
+            "longitude": "2.622634672553074"
+         },
+         "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "3.7",
+            "reviewCount": "1279"
+         },
+         "openingHours": [
+            "Mo-Su 09:30-21:00"
+         ],
+         "contactPoint": {
+            "telephone": "971 61 60 59",
+            "email": "info@grupocappuccino.com"
+         },
+         "url": "http://www.cappuccinograndcafe.es/es/mallorca/valldemossa",
+         "image": [
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Capuccino Valldemossa/imagen-1.webp",
+               "name": "Imagen 1 - Capuccino Valldemossa"
+            },
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Capuccino Valldemossa/imagen-2.webp",
+               "name": "Imagen 2 - Capuccino Valldemossa"
+            },
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Capuccino Valldemossa/imagen-3.webp",
+               "name": "Imagen 3 - Capuccino Valldemossa"
+            },
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Capuccino Valldemossa/imagen-4.webp",
+               "name": "Imagen 4 - Capuccino Valldemossa"
+            }
+         ],
+         "priceRange": "$$$",
+         "acceptsReservations": true,
+         "hasMenu": true,
+         "events": [],
+         "keywords": [
+            "Comida y Bebida",
+            "Comida",
+            "Pasteleria",
+            "Libros",
+            "Lectura",
+            "Musica"
+         ]
+      },
+      {
+         "@type": "CafeOrCoffeeShop",
+         "name": "ROM4N1 Cafetería & Restaurant",
+         "description": "Dentro de la dilatada gama de productos artesanales que elaboramos en Ca'n Molinas, quizás el más emblemático sea la famosísima coca de patata, un hito de la cultura tradicional Mallorquina, enseña de identidad de la localidad Valldemossina, y como no, sello y marca de la calidad de este horno.",
+         "address": {
+            "streetAddress": "Avinguda del General Luque, 41",
+            "addressLocality": "Inca",
+            "addressRegion": "Illes Balears",
+            "postalCode": "07300",
+            "addressCountry": "ES"
+         },
+         "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "39.71932118849009",
+            "longitude": "2.909109823903032"
+         },
+         "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.0",
+            "reviewCount": "1230"
+         },
+         "openingHours": [
+            "Tu-Th 08:30-00:30",
+            "Fr-Su 08:30-01:30"
+         ],
+         "contactPoint": {
+            "telephone": "971 88 20 54",
+            "email": "rom4n1@gmail.com"
+         },
+         "url": "https://www.facebook.com/romani41",
+         "image": [
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/ROM4N1 Cafetería & Restaurant/imagen-1.webp",
+               "name": "Imagen 1 - ROM4N1 Cafetería & Restaurant"
+            },
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/ROM4N1 Cafetería & Restaurant/imagen-2.webp",
+               "name": "Imagen 2 - ROM4N1 Cafetería & Restaurant"
+            },
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/ROM4N1 Cafetería & Restaurant/imagen-3.webp",
+               "name": "Imagen 3 - ROM4N1 Cafetería & Restaurant"
+            }
+         ],
+         "priceRange": "$$$",
+         "acceptsReservations": true,
+         "hasMenu": true,
+         "events": [],
+         "keywords": [
+            "Comida y Bebida",
+            "Comida",
+            "Musica",
+            "Copas"
+         ]
+      },
+      {
+         "@type": "CafeOrCoffeeShop",
+         "name": "Dulce de Leche",
+         "description": "Dentro de la dilatada gama de productos artesanales que elaboramos en Ca'n Molinas, quizás el más emblemático sea la famosísima coca de patata, un hito de la cultura tradicional Mallorquina, enseña de identidad de la localidad Valldemossina, y como no, sello y marca de la calidad de este horno.",
+         "address": {
+            "streetAddress": "Via Palma, 100",
+            "addressLocality": "Manacor",
+            "addressRegion": "Illes Balears",
+            "postalCode": "07500",
+            "addressCountry": "ES"
+         },
+         "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "39.575002839978296",
+            "longitude": "3.203855808756887"
+         },
+         "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.6",
+            "reviewCount": "880"
+         },
+         "openingHours": [
+            "Mo-Do 07:30-14:30",
+            "Mo-Sa 17:00-20:00"
+         ],
+         "contactPoint": {
+            "telephone": "871 51 03 59",
+            "email": "reguscidulcedeleche@gmail.com"
+         },
+         "url": "https://www.facebook.com/DulcedelecheManacor/",
+         "image": [
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Dulce De Leche/imagen-1.webp",
+               "name": "Imagen 1 - Dulce De Leche"
+            },
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Dulce De Leche/imagen-2.webp",
+               "name": "Imagen 2 - Dulce De Leche"
+            },
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Dulce De Leche/imagen-3.webp",
+               "name": "Imagen 3 - Dulce De Leche"
+            },
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Dulce De Leche/imagen-4.webp",
+               "name": "Imagen 4 - Dulce De Leche"
+            },
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Dulce De Leche/imagen-5.webp",
+               "name": "Imagen 5 - Dulce De Leche"
+            }
+         ],
+         "priceRange": "$",
+         "acceptsReservations": false,
+         "hasMenu": true,
+         "events": [],
+         "keywords": [
+            "Comida y Bebida",
+            "Comida",
+            "Pasteleria",
+            "Cartas"
+         ]
+      },
+      {
+         "@type": "CafeOrCoffeeShop",
+         "name": "Es Passeig",
+         "description": "Dentro de la dilatada gama de productos artesanales que elaboramos en Ca'n Molinas, quizás el más emblemático sea la famosísima coca de patata, un hito de la cultura tradicional Mallorquina, enseña de identidad de la localidad Valldemossina, y como no, sello y marca de la calidad de este horno.",
+         "address": {
+            "streetAddress": "Paseig de la Mare de Déu de la Victòria, 5",
+            "addressLocality": "Alcúdia",
+            "addressRegion": "Illes Balears",
+            "postalCode": "07400",
+            "addressCountry": "ES"
+         },
+         "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "39.85224839057196",
+            "longitude": "3.123804538225109"
+         },
+         "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.1",
+            "reviewCount": "430"
+         },
+         "openingHours": [
+            "Mo-We 07:00-00:00",
+            "Fr-Su 07:00-00:00"
+         ],
+         "contactPoint": {
+            "telephone": "971 54 54 30",
+            "email": "salvaavila@gmail.com"
+         },
+         "url": "http://barespasseigalcudia.rf.gd/",
+         "image": [
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Es Passeig/imagen-1.webp",
+               "name": "Imagen 1 - Es Passeig"
+            },
+            {
+               "@type": "ImageObject",
+               "url": "assets/img/cafeterias/Es Passeig/imagen-2.webp",
+               "name": "Imagen 2 - Es Passeig"
+            }
+         ],
+         "priceRange": "$",
+         "acceptsReservations": false,
+         "hasMenu": true,
+         "events": [],
+         "keywords": [
+            "Comida y Bebida",
+            "Comida",
+            "Pasteleria"
+         ]
+      }
+   ]
+}
