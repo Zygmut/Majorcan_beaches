@@ -220,10 +220,11 @@ function buttonCafe(beach){
             if (distance(beach.geo.latitude, beach.geo.longitude, item.geo.latitude, item.geo.longitude) < 15) {
                 var singleMarker = L.marker([item.geo.latitude, item.geo.longitude]);
                 singleMarker.addTo(map);
+				console.log(item)
                 const popupContent = `
                 <div>
                     <h2 style="font-size: 20px;">${item.name}</h2>
-                    <img src="${item.image[0].url}" style="height: 130px; width:130px; object-fit: cover; aspect-ratio: 1/1;">
+                    <img src="https://s3.tradingview.com/8/8ZAQrOyV_big.png" style="height: 130px; width:130px; object-fit: cover; aspect-ratio: 1/1;">
                 </div>
             `;
                 singleMarker.bindPopup(popupContent);
@@ -245,10 +246,11 @@ function buttonRestaurant(beach){
             if (distance(beach.geo.latitude, beach.geo.longitude, item.geo.latitude, item.geo.longitude) < 15) {
                 var singleMarker = L.marker([item.geo.latitude, item.geo.longitude]);
                 singleMarker.addTo(map);
+				console.log(item)
                 const popupContent = `
                 <div>
-                    <h2 style="font-size: 20px;">${dbRes.name}</h2>
-                    <img src="${dbRes.image[0].url}" style="height: 130px; width:130px; object-fit: cover; aspect-ratio: 1/1;">
+                    <h2 style="font-size: 20px;">${item.name}</h2>
+                    <img src="https://s-i.huffpost.com/gen/1224269/images/o-ANGRY-STOCK-PHOTOS-facebook.jpg" style="height: 130px; width:130px; object-fit: cover; aspect-ratio: 1/1;">
                 </div>
             `;
                 singleMarker.bindPopup(popupContent);
@@ -260,7 +262,7 @@ function buttonRestaurant(beach){
 }
 
 function buttonSupermaket(beach){
-	SupermaketButton.addEventListener(
+	SupermarketButton.addEventListener(
 		"click",
 		function () { 
         for (let i = 0; i < dbSuper.length; i++) {
@@ -268,10 +270,11 @@ function buttonSupermaket(beach){
             if (distance(beach.geo.latitude, beach.geo.longitude, item.geo.latitude, item.geo.longitude) < 15) {
                 var singleMarker = L.marker([item.geo.latitude, item.geo.longitude]);
                 singleMarker.addTo(map);
+				console.log(item)
                 const popupContent = `
                 <div>
                     <h2 style="font-size: 20px;">${item.name}</h2>
-                    <img src="${item.image[0].url}" style="height: 130px; width:130px; object-fit: cover; aspect-ratio: 1/1;">
+                    <img src="https://yt3.ggpht.com/a/AATXAJwwZXpwXRuMY38VRr__FRjNpBNDLyeQSes5Y_Lx_Q=s900-c-k-c0xffffffff-no-rj-mo" style="height: 130px; width:130px; object-fit: cover; aspect-ratio: 1/1;">
                 </div>
             `;
                 singleMarker.bindPopup(popupContent);
