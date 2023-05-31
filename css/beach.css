@@ -64,6 +64,18 @@
 	z-index: 2;
 }
 
+.ButtonDeMapa{
+	height: 1px;
+	width: 25%;
+}
+
+#map {
+	margin-top: 40px;
+	border: none;
+	width: 100%;
+	justify-content: center !important;
+  }
+
 /*------/ Title /------*/
 .title-wrap {
 	padding-bottom: 4rem;
