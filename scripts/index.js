@@ -5,7 +5,8 @@ document.addEventListener("DOMContentLoaded", () => {
 			event.preventDefault();
 			const content = document.getElementById("contentInput").value;
 			const destinationURL =
-				"./search.html?content=" + encodeURIComponent(content);
+				"./search.html?content=" + encodeURIComponent(content)+"&pagination=0&page=0";
+
 			window.location.href = destinationURL;
 		});
 });
