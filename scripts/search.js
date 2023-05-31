@@ -235,8 +235,12 @@ async function queryForm() {
 	}
 
 	//First batch visualization
-	for(let i=0; i<beachBatches[actual_batch].length;i++){
-		beach_listing.innerHTML += beachBatches[actual_batch][i];
+	if(beachBatches.length>0){
+		for(let i=0; i<beachBatches[actual_batch].length;i++){
+			beach_listing.innerHTML += beachBatches[actual_batch][i];
+		}
+	}else{
+		alert("No se han encontrado playas...");
 	}
 
 	addPages(actual_pagination);
