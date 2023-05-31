@@ -1,6 +1,6 @@
 export const fetchDBres = async () => {
 	return fetch(
-		"https://www.mllcarestaurantes.com/assets/restaurante.json"
+		"https://raw.githubusercontent.com/Zygmut/Majorcan_beaches/main/assets/json/restaurante.json"
 	)
 		.then((response) => response.json())
 		.then((json) => json["itemListElement"]);
