@@ -1,7 +1,14 @@
 import { fetchDB } from "./db.js";
+import { fetchDBcafe } from "./dbcafe.js";
+import { fetchDBres } from "./dbres.js";
+import { fetchDBsuper } from "./dbsuper.js";
 
 
 let db;
+let dbCafe;
+let dbRes;
+let dbSuper;
+let map;
 
 const langHash = {
 	es: 0,
@@ -42,6 +49,9 @@ const espToEngHash = {
 
 document.addEventListener("DOMContentLoaded", async () => {
 	db = await fetchDB();
+	dbSuper = await fetchDBsuper();
+	dbCafe = await fetchDBcafe();
+	dbRes = await fetchDBres();
 	enableContentSwipper();
 	loadBeachContent();
 });
@@ -64,8 +74,9 @@ function loadBeachContent() {
 	loadTags(beach_data);
 	textToSpeech(beach_data, "en");
 	weatherApi(beach_data)
-
-
+	buttonCafe(beach_data)
+	buttonRestaurant(beach_data)
+	buttonSupermaket(beach_data)
 
 }
 
@@ -133,15 +144,14 @@ function enableContentSwipper() {
 }
 
 function generateMap(beach) {
-	var map = L.map('map').setView([ beach.geo.latitude, beach.geo.longitude], 13);
+	map = L.map('map').setView([ beach.geo.latitude, beach.geo.longitude], 13);
 
 	L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 		maxZoom: 19,
 		attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 	}).addTo(map);
-	setTimeout(function () {
-		window.dispatchEvent(new Event("resize"));
-	}, 500);
+	var singleMarker = L.marker([beach.geo.latitude, beach.geo.longitude]);
+                singleMarker.addTo(map);
 }
 
 function textToSpeech(beach, lang) {
@@ -199,5 +209,101 @@ function weatherApi(beach) {
 
 function precise(x) {
 	return x.toPrecision(3);
-  }
+}
+
+function buttonCafe(beach){
+	CafeButton.addEventListener(
+		"click",
+		function () {
+        for (let i = 0; i < dbCafe.length; i++) {
+            const item = dbCafe[i];
+            if (distance(beach.geo.latitude, beach.geo.longitude, item.geo.latitude, item.geo.longitude) < 15) {
+                var singleMarker = L.marker([item.geo.latitude, item.geo.longitude]);
+                singleMarker.addTo(map);
+                const popupContent = `
+                <div>
+                    <h2 style="font-size: 20px;">${item.name}</h2>
+                    <img src="${item.image[0].url}" style="height: 130px; width:130px; object-fit: cover; aspect-ratio: 1/1;">
+                </div>
+            `;
+                singleMarker.bindPopup(popupContent);
+            }
+        }
+		}
+	);
+
+}
+
+
+
+function buttonRestaurant(beach){
+	RestaurantButton.addEventListener(
+		"click",
+		function () {
+        for (let i = 0; i < dbRes.length; i++) {
+            const item = dbRes[i];
+            if (distance(beach.geo.latitude, beach.geo.longitude, item.geo.latitude, item.geo.longitude) < 15) {
+                var singleMarker = L.marker([item.geo.latitude, item.geo.longitude]);
+                singleMarker.addTo(map);
+                const popupContent = `
+                <div>
+                    <h2 style="font-size: 20px;">${dbRes.name}</h2>
+                    <img src="${dbRes.image[0].url}" style="height: 130px; width:130px; object-fit: cover; aspect-ratio: 1/1;">
+                </div>
+            `;
+                singleMarker.bindPopup(popupContent);
+            }
+        }
+		}
+	);
+
+}
+
+function buttonSupermaket(beach){
+	SupermaketButton.addEventListener(
+		"click",
+		function () { 
+        for (let i = 0; i < dbSuper.length; i++) {
+            const item = dbSuper[i];
+            if (distance(beach.geo.latitude, beach.geo.longitude, item.geo.latitude, item.geo.longitude) < 15) {
+                var singleMarker = L.marker([item.geo.latitude, item.geo.longitude]);
+                singleMarker.addTo(map);
+                const popupContent = `
+                <div>
+                    <h2 style="font-size: 20px;">${item.name}</h2>
+                    <img src="${item.image[0].url}" style="height: 130px; width:130px; object-fit: cover; aspect-ratio: 1/1;">
+                </div>
+            `;
+                singleMarker.bindPopup(popupContent);
+            }
+        }
+		}
+	);
+
+}
+
+
+
+function distance(lat1, lon1, lat2, lon2) {
+    const R = 6371; // Earth's radius in kilometers
+    const dLat = (lat2 - lat1) * Math.PI / 180; // difference in latitude in radians
+    const dLon = (lon2 - lon1) * Math.PI / 180; // difference in longitude in radians
+    const a =
+        Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+        Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+        Math.sin(dLon / 2) * Math.sin(dLon / 2);
+    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+    const distance = R * c; // distance in kilometers
+    return distance;
+}
+
+
+
+
+
+
+
+
+
+    
 
