@@ -53,6 +53,11 @@ h2:after {
 	border: none;
 	transition: 0.2s ease-in-out;
 }
+
+#video-contact{
+	border-radius: 15px;
+
+}
 .form-as .validation {
 	color: red;
 	display: none;
