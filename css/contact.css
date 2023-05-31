@@ -23,7 +23,41 @@
 .form-as .show {
 	display: block;
 }
+h2 {
+	position: relative;
+	width: 35%;
+}
 
+h2:after {
+	content: "";
+	position: absolute;
+	width: inherit;
+	height: 3px;
+	background-color: var(--accent-color);
+	bottom: -0.3rem;
+	left: 0;
+}
+.btn-primary {
+	background-color: var(--complementary-accent-color);
+	border: none;
+	transition: 0.2s ease-in-out;
+}
+
+.btn-primary:hover {
+	background-color: var(--accent-color);
+	border: none;
+	transition: 0.1s ease-in-out;
+}
+#send:focus{
+	background-color: var(--complementary-accent-color);
+	border: none;
+	transition: 0.2s ease-in-out;
+}
+
+#video-contact{
+	border-radius: 15px;
+
+}
 .form-as .validation {
 	color: red;
 	display: none;
@@ -31,7 +65,9 @@
 	font-weight: 400;
 	font-size: 13px;
 }
-
+ul.list-inline li.list-inline-item {
+  margin-right: 30px; /* Ajusta el valor según el espacio deseado */
+}
 .form-as label {
 	color: #000000;
 	position: relative;
@@ -42,7 +78,7 @@
 }
 
 .form-as .form-control {
-	border-radius: 0;
+
 	font-size: 1.1rem;
 	font-weight: 300;
 }
@@ -53,7 +89,7 @@
 
 .form-as .form-control:focus {
 	box-shadow: none;
-	border-color: #2eca6a;
+	border-color: var(--accent-color);
 }
 
 .php-email-form .error-message {
@@ -84,7 +120,7 @@
 .php-email-form .loading:before {
 	content: "";
 	display: inline-block;
-	border-radius: 50%;
+
 	width: 24px;
 	height: 24px;
 	margin: 0 10px -6px 0;
@@ -103,7 +139,7 @@
 }
 
 .php-email-form .form-control {
-	border-radius: 0;
+
 	font-size: 1.1rem;
 	font-weight: 300;
 }
@@ -114,9 +150,13 @@
 
 .php-email-form .form-control:focus {
 	box-shadow: none;
-	border-color: #2eca6a;
+	border-color: var(--accent-color);
 }
+#message-area{
+	resize: none;
 
+	height: 200px;
+}
 @keyframes animate-loading {
 	0% {
 		transform: rotate(0deg);
