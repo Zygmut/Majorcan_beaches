@@ -32,11 +32,18 @@ const espToEngHash = {
 	arena: "sandy",
 	roca: "rocky",
 };
+//Max number of beaches per batch
+const maxSizeBatch = 9;
 var beachBatches = [];
+
+//Max number of pages per pagination (dependeds on results)
+const maxPagesPerPagination = 5;
 var paginations = [];
 var numberOfPaginations;
+//Tracking variables
 var actual_pagination;
 var actual_batch;
+
 //Main event and function triggerer
 document.addEventListener("DOMContentLoaded", async () => {
 	db = await fetchDB();
@@ -71,7 +78,7 @@ function loadURLContent() {
 		actual_batch = 0;
 		actual_pagination = 0;
 	}
-	console.log("UPDATED URL");
+
 	document.getElementById("name").value = content;
 	document.getElementById("submit").click();
 
@@ -145,30 +152,30 @@ async function queryForm() {
 			filter_name(item, form_data.name) &&
 			filter_keywords(item, keyword_filter)
 	);
-
+	//If any form data is checked...
 	if (form_data.city != "All Cities" || form_data.blue_flag != false|| form_data.type != "All types"|| form_data.hike != false
 		|| form_data.nudist != false ||form_data.parking != false|| form_data.first_aid != false || form_data.showers != false){
 		actual_batch=0;
 		actual_pagination=0;
 	}
+
 	//Load every beach matching form data in here
 	const beaches = Array.from(
 		search.map((x) =>
 			generateBeach(x["@identifier"], x.name, x.keywords, x.photo[0])
 		)
 	);
+	//Remove previous batch from possible previous search
 	const pages = document.getElementById('pages');
 	removeChildrens(pages);
 
+	//Reset buttons styling
 	const rightButton = document.getElementById('right-button');
 	const leftButton = document.getElementById('left-button');
 	rightButton.style.display='none';
 	leftButton.style.display='none';
-	//Listing changes must be done here
-	//beaches.forEach((element) => (beach_listing.innerHTML += element));
 
-	//Max number of beaches per batch
-	const maxSizeBatch = 9;
+
 	var indexBatch = 0;
 	var batch= [];
 	var count=0;
@@ -189,8 +196,7 @@ async function queryForm() {
 	if (batch.length<maxSizeBatch && batch.length > 0){
 		beachBatches.splice(indexBatch,0,batch);
 	}
-	//Max number of paginations needed according to query results
-	const maxPagesPerPagination = 5;
+
 	numberOfPaginations = Math.ceil(beachBatches.length/maxPagesPerPagination);
 	//Reset paginations
 	paginations = [];
@@ -209,45 +215,49 @@ async function queryForm() {
 		}
 
 	}
+
 	if (pagination.length<maxPagesPerPagination && pagination.length > 0){
 		paginations.splice(paginationIndex,0,pagination);
 	}
-	console.log(paginations);
+
+	/* console.log(paginations);
 	console.log(beachBatches.length);
-	console.log(numberOfPaginations);
+	console.log(numberOfPaginations); */
 
 
-	//Paginations start in 0
 	const name = document.getElementById('name');
 	const URLparams = new URLSearchParams(window.location.search);
 	const content_name = URLparams.get('content');
+	//If name submited is not the same as the content, reset batch and pagination
 	if (name.value != content_name){
 		actual_batch = 0;
 		actual_pagination = 0;
 	}
 
-		//First batch visualization
-		for(let i=0; i<beachBatches[actual_batch].length;i++){
-			beach_listing.innerHTML += beachBatches[actual_batch][i];
+	//First batch visualization
+	for(let i=0; i<beachBatches[actual_batch].length;i++){
+		beach_listing.innerHTML += beachBatches[actual_batch][i];
 	}
 
 	addPages(actual_pagination);
+
+	//If +5 pages exist in the query
 	if(actual_pagination + 1 < numberOfPaginations){
 		const rightButton = document.getElementById('right-button');
 		rightButton.style.display='block';
 	}
 	initNavigationButtons();
+	//In case query changes pagination and page from default.
 	if (actual_pagination!=0 || actual_batch!=0){
 		updatePagination(actual_pagination);
 		updateBatch(actual_batch);
 	}
 	//Update URL content
-
 	const destinationURL = "./search.html?content="+encodeURIComponent(name.value)+"&pagination="+encodeURI(actual_pagination)+"&page="+encodeURI(actual_batch);
 	history.replaceState(null,null,destinationURL);
 }
-
-function initNavigationButtons(){
+//Right and left buttons
+function initNavigationButtons() {
 	//Navs buttons
 	const rightButton = document.getElementById('right-button');
 	const leftButton = document.getElementById('left-button');
@@ -279,7 +289,9 @@ function removeChildrens(parent) {
 //Add Pages depending of Pagination
 function addPages(numberOfPagination) {
   const pages = document.getElementById('pages');
+	//Number visualized in the page btn
   var number = numberOfPagination * 5 + 1;
+	//Index of the button in the actual pagination
   var index = 0;
   for (let _ in paginations[actual_pagination]) {
     const page = document.createElement('li');
@@ -288,11 +300,11 @@ function addPages(numberOfPagination) {
     pButton.classList.add('btn', 'btn-primary', 'rounded-circle');
     pButton.innerHTML = number;
 
-    // Utilizamos una función externa para crear un cierre alrededor del valor de index
+    //Work around to append different index
     const createButtonClickListener = function (currentIndex) {
       return function () {
         updateBatch(currentIndex);
-        pButton.classList.add('selected');
+
       };
     };
 
@@ -305,6 +317,18 @@ function addPages(numberOfPagination) {
   }
 }
 
+
+window.addEventListener('popstate', function(event) {
+	const URLparams = new URLSearchParams(window.location.search);
+	//Pagination and page adquired from new state
+	const pagination = URLparams.get("pagination");
+	const page = URLparams.get("page");
+	//Internal state update
+	actual_pagination = pagination;
+
+	updatePagination(pagination);
+	updateBatch(page, false);
+});
 //Update pagination
 function updatePagination(pagination){
 	const pages = document.getElementById('pages');
@@ -326,70 +350,29 @@ function updatePagination(pagination){
 	addPages(pagination);
 
 }
-
-window.addEventListener('popstate', function(event) {
-	const URLparams = new URLSearchParams(window.location.search);
-/* 	const content = URLparams.get("content");
-	const name = this.document.getElementById('name');
-	name.value=content; */
-	const pagination = URLparams.get("pagination");
-	const page = URLparams.get("page");
-	console.log("Pagination: "+pagination+" Page: "+page);
-	actual_pagination = pagination;
-
-	updatePagination_stateChange(pagination);
-	updateBatch_stateChange(page);
-});
-
-window.addEventListener('hashchange', function(event){
-
-});
-function updatePagination_stateChange(pagination){
-	const pages = document.getElementById('pages');
-	const rightButton = document.getElementById('right-button');
-	const leftButton = document.getElementById('left-button');
-
-
-	if(actual_pagination == numberOfPaginations-1){
-		rightButton.style.display='none';
-	}else{
-		rightButton.style.display='block';
-	}
-	if(actual_pagination == 0){
-		leftButton.style.display='none';
-	}else{
-		leftButton.style.display='block';
-	}
-	removeChildrens(pages);
-	addPages(pagination);
-}
-function updateBatch_stateChange(batch){
+//Update Batch
+function updateBatch(batch, push){
 	const beach_listing = document.getElementById('beaches');
 	const currentUrl = updateURL(batch);
-	history.replaceState(null,null,currentUrl);
+
 	removeChildrens(beach_listing);
 
 	for(let i = 0; i < paginations[actual_pagination][batch].length; i++) {
 		beach_listing.innerHTML += paginations[actual_pagination][batch][i];
 	}
-}
-
-function updateBatch(batch){
-	const beach_listing = document.getElementById('beaches');
-	const currentUrl = updateURL(batch);
-	history.pushState(null,null,currentUrl);
-	removeChildrens(beach_listing);
-
-	for(let i = 0; i < paginations[actual_pagination][batch].length; i++) {
-		beach_listing.innerHTML += paginations[actual_pagination][batch][i];
+	if (push==true){
+		history.pushState(null,null,currentUrl);
+	}else{
+		history.replaceState(null,null,currentUrl);
 	}
 }
+//Updated URL
 function updateURL(batch){
 	const name = document.getElementById('name');
 	const updatedURL = "./search.html?content="+encodeURIComponent(name.value)+"&pagination="+encodeURI(actual_pagination)+"&page="+encodeURI(batch);
 	return updatedURL;
 }
-//Misc to create
+//MISC TO CREATE
 function generateTag(name) {
 	return `
 												<li>
